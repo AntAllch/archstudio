@@ -1,0 +1,17 @@
+nav{
+    display: flex;
+    align-items: center;
+
+    .nav-list{ //ul
+        display: flex;
+    }
+
+    .nav-item{ //li
+        list-style: none;
+        margin-left: 1em;
+    }
+
+    .nav-link{ //a
+        text-decoration: none;
+    }
+}

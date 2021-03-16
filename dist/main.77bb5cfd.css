@@ -7,4 +7,65 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: teal;
+}
+
+header {
+  display: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+nav .nav-list {
+  display: flex;
+}
+nav .nav-item {
+  list-style: none;
+  margin-left: 1em;
+}
+nav .nav-link {
+  text-decoration: none;
+}
+
+.mobile .mobile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  background-color: #fff;
+}
+.mobile .mobile-header .close {
+  display: none;
+}
+.mobile .mobile-header .open {
+  display: block;
+}
+.mobile .mobile-nav {
+  width: 90%;
+  margin-left: auto;
+  background-color: #EEEFF4;
+  padding: 3.5em 0 3.5em 3em;
+  font-family: "Spartan", sans-serif;
+  font-weight: 500;
+  opacity: 0;
+  pointer-events: none;
+}
+.mobile .mobile-nav .mobile-nav-item {
+  list-style: none;
+}
+.mobile .mobile-nav .mobile-nav-item:not(:last-of-type) {
+  padding-bottom: 3em;
+}
+.mobile .mobile-nav .mobile-nav-link {
+  text-decoration: none;
+  color: #1B1D23;
+  transition: opacity 250ms ease-in-out;
+}
+.mobile .mobile-nav .mobile-nav-link:hover {
+  opacity: 0.5;
+}
+
 /*# sourceMappingURL=/main.77bb5cfd.css.map */
