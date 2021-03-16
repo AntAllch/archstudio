@@ -1,0 +1,6 @@
+//Any partial style sheet added into "abstracts" folder must be added here via "@forward"
+
+@forward '../abstracts/colors';
+@forward '../abstracts/mixins';
+@forward '../abstracts/responsive';
+@forward '../abstracts/typography';

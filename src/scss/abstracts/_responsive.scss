@@ -1,0 +1,31 @@
+@mixin respond($breakpoint){
+
+    // ----- DESKTOP FIRST ----- //
+    // @if $breakpoint == tablet{
+    //     @media screen and (max-width: 1000px){
+    //         @content;
+    //     }
+    // }
+
+    // @if $breakpoint == mobile{
+    //     @media screen and (max-width: 600px){
+    //         @content;
+    //     }
+    // }   
+    // ------------------------ //
+
+
+    // ----- MOBILE FIRST ----- //
+    // @if $breakpoint == tablet{
+    //     @media screen and (min-width: 600px){
+    //         @content;
+    //     }
+    // }
+
+    // @if $breakpoint == desktop{
+    //     @media screen and (min-width: 1000px){
+    //         @content;
+    //     }
+    // }   
+    // ------------------------ //
+}
