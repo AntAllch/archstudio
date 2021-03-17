@@ -1,6 +1,6 @@
 @mixin imagejpg($bg){
     background: {
-        image: url("../img/#{$bg}.jpg");
+        image: url("../../img//home/mobile/#{$bg}.jpg");
         size: cover;
         position: center;
     }
@@ -46,6 +46,7 @@
     }
 }
 
-
-
-
+@mixin size($size){
+    width: #{$size}px;
+    height: #{$size}px;
+}

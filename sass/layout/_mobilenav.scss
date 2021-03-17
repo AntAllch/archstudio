@@ -1,0 +1,75 @@
+.mobile{
+
+    @include respond(tablet){
+        display: none;
+    }
+
+    .mobile-header{
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2em;
+        background-color: $white;
+
+        .hamburger{
+            cursor: pointer;
+        }
+
+        .close{
+            display: none;
+            cursor: pointer;
+        }
+        
+    }
+
+    .mobile-nav{
+
+        width: 80%;
+        position: absolute;
+        right: 0;
+        background-color: $verylight-grey;
+        padding: $mobile-nav-padding;
+        font-weight: $fw-medium;
+        opacity: 0;
+        transform: translateX(100%);
+        transition: $transition-opacity, $transition-transform;
+
+        // .mobile-nav-list{ //ul 
+        // }
+
+        .mobile-nav-item{ //li
+            list-style: none;
+
+            &:not(:last-of-type){
+                padding-bottom: 3em;
+            }
+
+        }
+
+        .mobile-nav-link{ //a
+            text-decoration: none;
+            color: $verydark-blue;
+            opacity: 0;
+            pointer-events: none;
+            transition: $transition-mobile-links;
+
+            &:hover,
+            &:focus{
+                opacity: 0.5;
+            }
+        }
+
+        .fade-links{
+            opacity: 1;
+            pointer-events: all;
+        }
+
+    }
+
+    .open{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+
+}

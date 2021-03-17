@@ -1,0 +1,12 @@
+.hero{
+    height: 560px;
+    // background: red;
+    background-image: url("../img/home/mobile/image-hero-paramour.jpg");
+    background-position: top;
+    background-size: cover;
+
+    @include respond(tablet){
+        background-image: url("../img/home/tablet/image-hero-paramour.jpg");    
+        margin: 0 5em;
+    }
+}
