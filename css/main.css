@@ -13,10 +13,15 @@ body {
   font-family: "Spartan", sans-serif; }
 
 .btn {
-  padding: 1.5em 3em;
+  padding: 2em 4em;
   background-color: #000;
+  border: none;
   color: #fff;
-  border: none; }
+  cursor: pointer; }
+  .btn:hover, .btn:focus {
+    background-color: #60636D; }
+  .btn:active {
+    background-color: #C8CCD8; }
 
 header {
   display: none;
@@ -111,11 +116,24 @@ nav {
   transform: translateX(0%); }
 
 .hero {
-  height: 560px;
-  background-image: url("../img/home/mobile/image-hero-paramour.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.45))), url("../img/home/mobile/image-hero-paramour.jpg");
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45)), url("../img/home/mobile/image-hero-paramour.jpg");
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45)), url("../img/home/mobile/image-hero-paramour.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45)), url("../img/home/mobile/image-hero-paramour.jpg");
+  background-color: black;
   background-position: top;
-  background-size: cover; }
+  background-size: cover;
+  color: #fff;
+  padding: 7em 2em; }
   @media screen and (min-width: 600px) {
     .hero {
       background-image: url("../img/home/tablet/image-hero-paramour.jpg");
       margin: 0 5em; } }
+  .hero h1 {
+    font-weight: 500;
+    font-size: 2.5em; }
+  .hero .hero-desc {
+    font-size: 0.8rem;
+    line-height: 1.7;
+    max-width: 430px;
+    margin-bottom: 5em; }

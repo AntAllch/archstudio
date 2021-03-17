@@ -1,7 +1,16 @@
 .btn{
     padding: $btn-padding;
     background-color: $black;
-    color: $white;
     border: none;
+    color: $white;
+    cursor: pointer;
 
+    &:hover,
+    &:focus{
+        background-color: $dark-grey;
+    }
+
+    &:active{
+        background-color: $light-grey;
+    }
 }
