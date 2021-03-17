@@ -94,8 +94,10 @@ nav .nav-link {
 }
 
 .hero {
-  background-image: url("/image-hero-paramour.a6ff2f6b.jpg");
   height: 560px;
+  background-image: url("/image-hero-paramour.a6ff2f6b.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */

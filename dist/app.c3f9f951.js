@@ -140,42 +140,31 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 //         }, 150 * (i+1));
 //     });
 // })
-var hamburger = document.querySelector(".hamburger");
-var close = document.querySelector(".close");
-var mobileNav = document.querySelector(".mobile-nav");
-var mobNavList = document.querySelector(".mobile-nav-list");
-var first = document.querySelector(".first");
-var second = document.querySelector(".second");
-var third = document.querySelector(".third"); //When you press the hamburger to open the mobile menu
-
-hamburger.addEventListener("click", function () {
-  console.log("hamburger pressed");
-  hamburger.style.display = "none";
-  close.style.display = "block";
-  mobileNav.classList.add("open");
-  setTimeout(function () {
-    mobNavList.classList.add("fade-links");
-  }, 400); // setTimeout(function() {
-  //     first.classList.add("fade-links");
-  // }, 400);
-  // setTimeout(function() {
-  //     second.classList.add("fade-links");
-  // }, 450);
-  // setTimeout(function() {
-  //     third.classList.add("fade-links");
-  // }, 500);
-}); //When you press the "X" to close the mobile menu
-
-close.addEventListener("click", function () {
-  console.log("close button pressed");
-  close.style.display = "none";
-  hamburger.style.display = "block";
-  mobNavList.classList.remove("fade-links");
-  mobileNav.classList.remove("open"); // first.classList.remove("fade-links");
-  // second.classList.remove("fade-links");
-  // third.classList.remove("fade-links");
-  // mobileNav.classList.remove("open");
-});
+var hamburger = $(".hamburger"); // let hamburger = document.querySelector(".hamburger");
+// let close = document.querySelector(".close");
+// let mobileNav = document.querySelector(".mobile-nav");
+// let mobNavList = document.querySelector(".mobile-nav-list");
+// let first = document.querySelector(".first");
+// let second = document.querySelector(".second");
+// let third = document.querySelector(".third");
+// //When you press the hamburger to open the mobile menu
+// hamburger.addEventListener("click", () => {
+//     console.log("hamburger pressed");
+//     hamburger.style.display = "none";
+//     close.style.display = "block";
+//     mobileNav.classList.add("open")
+//     setTimeout(function() {
+//         mobNavList.classList.add("fade-links");
+//     }, 400);
+// })
+// //When you press the "X" to close the mobile menu
+// close.addEventListener("click", () => {
+//     console.log("close button pressed");
+//     close.style.display = "none";
+//     hamburger.style.display = "block";
+//     mobNavList.classList.remove("fade-links");
+//     mobileNav.classList.remove("open");
+// })
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -204,7 +193,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62088" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59341" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

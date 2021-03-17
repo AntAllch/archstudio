@@ -1,8 +1,13 @@
+// @use "../abstracts/" as a;
+
+
 // .container{
 
 //     // CHANGE WIDTH AND MARGIN TO SUIT YOUR DESIGN
 //     // THE "MARGIN: 0 AUTO;" MAKES SURE THE CONTAINER IS IN THE CENTRE OF THE PAGE, ON THE X AXIS
 
-//     width: 1440px;
-//     margin: 0 auto;
+//     @include a.respond(desktop){
+//         width: 1440px;
+//         margin: 0 auto;
+//     }
 // }

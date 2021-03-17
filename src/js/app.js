@@ -28,51 +28,40 @@
     
 // })
 
-let hamburger = document.querySelector(".hamburger");
-let close = document.querySelector(".close");
-let mobileNav = document.querySelector(".mobile-nav");
-let mobNavList = document.querySelector(".mobile-nav-list");
-let first = document.querySelector(".first");
-let second = document.querySelector(".second");
-let third = document.querySelector(".third");
+
+
+let hamburger = $(".hamburger");
+
+// let hamburger = document.querySelector(".hamburger");
+// let close = document.querySelector(".close");
+// let mobileNav = document.querySelector(".mobile-nav");
+// let mobNavList = document.querySelector(".mobile-nav-list");
+// let first = document.querySelector(".first");
+// let second = document.querySelector(".second");
+// let third = document.querySelector(".third");
 
 
 
-//When you press the hamburger to open the mobile menu
-hamburger.addEventListener("click", () => {
-    console.log("hamburger pressed");
-    hamburger.style.display = "none";
-    close.style.display = "block";
-    mobileNav.classList.add("open")
+// //When you press the hamburger to open the mobile menu
+// hamburger.addEventListener("click", () => {
+//     console.log("hamburger pressed");
+//     hamburger.style.display = "none";
+//     close.style.display = "block";
+//     mobileNav.classList.add("open")
 
-    setTimeout(function() {
-        mobNavList.classList.add("fade-links");
-    }, 400);
+//     setTimeout(function() {
+//         mobNavList.classList.add("fade-links");
+//     }, 400);
+// })
 
-    // setTimeout(function() {
-    //     first.classList.add("fade-links");
-    // }, 400);
-    // setTimeout(function() {
-    //     second.classList.add("fade-links");
-    // }, 450);
-    // setTimeout(function() {
-    //     third.classList.add("fade-links");
-    // }, 500);
-})
+// //When you press the "X" to close the mobile menu
+// close.addEventListener("click", () => {
+//     console.log("close button pressed");
+//     close.style.display = "none";
+//     hamburger.style.display = "block";
+//     mobNavList.classList.remove("fade-links");
+//     mobileNav.classList.remove("open");
 
-//When you press the "X" to close the mobile menu
-close.addEventListener("click", () => {
-    console.log("close button pressed");
-    close.style.display = "none";
-    hamburger.style.display = "block";
-    mobNavList.classList.remove("fade-links");
-    mobileNav.classList.remove("open");
-
-    // first.classList.remove("fade-links");
-    // second.classList.remove("fade-links");
-    // third.classList.remove("fade-links");
-    // mobileNav.classList.remove("open");
-
-})
+// })
 
 
