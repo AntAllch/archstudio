@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:ital,wght@0,300;0,500;0,600;0,700;1,400&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: teal;
+}
+
+* {
+  font-family: "Spartan", sans-serif;
+}
+
+.btn {
+  padding: 1.5em 3em;
+  background-color: #000;
+  color: #fff;
+  border: none;
+}
+
+header {
+  display: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+nav .nav-list {
+  display: flex;
+}
+nav .nav-item {
+  list-style: none;
+  margin-left: 1em;
+}
+nav .nav-link {
+  text-decoration: none;
+}
+
+.mobile .mobile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  background-color: #fff;
+}
+.mobile .mobile-header .hamburger {
+  cursor: pointer;
+}
+.mobile .mobile-header .close {
+  display: none;
+  cursor: pointer;
+}
+.mobile .mobile-nav {
+  width: 90%;
+  position: absolute;
+  right: 0;
+  background-color: #EEEFF4;
+  padding: 3.5em 0 3.5em 3em;
+  font-weight: 500;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 250ms ease-in-out, transform 400ms cubic-bezier(0.14, 0.61, 0.39, 0.92);
+}
+.mobile .mobile-nav .mobile-nav-item {
+  list-style: none;
+}
+.mobile .mobile-nav .mobile-nav-item:not(:last-of-type) {
+  padding-bottom: 3em;
+}
+.mobile .mobile-nav .mobile-nav-link {
+  text-decoration: none;
+  color: #1B1D23;
+  opacity: 1;
+  transition: opacity 250ms ease-in-out;
+}
+.mobile .mobile-nav .mobile-nav-link:hover, .mobile .mobile-nav .mobile-nav-link:focus {
+  opacity: 0.5;
+}
+.mobile .open {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.hero {
+  background-image: url("/image-hero-paramour.a6ff2f6b.jpg");
+  height: 560px;
+}
+
+/*# sourceMappingURL=/app.c3f9f951.css.map */

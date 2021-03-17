@@ -1,0 +1,10 @@
+@use "../abstracts/" as a;
+@use "../base/" as b;
+
+.btn{
+    padding: a.$btn-padding;
+    background-color: a.$black;
+    color: a.$white;
+    border: none;
+
+}

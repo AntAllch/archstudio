@@ -1,0 +1,5 @@
+@use "../base/" as b;
+
+*{
+    font-family: b.$ff-main;
+}
