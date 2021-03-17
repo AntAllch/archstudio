@@ -4,11 +4,16 @@
     background-position: top;
     background-size: cover;
     color: $white;
-    padding: $hero-tablet-padding;
+    padding: $hero-mobile-padding;
 
     @include respond(tablet){
-        background-image: url("../img/home/tablet/image-hero-paramour.jpg");    
-        margin: 0 5em;
+        background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.45),), url("../img/home/tablet/image-hero-paramour.jpg");;    
+        // margin: $tablet-margin;
+    }
+
+    @include respond(desktop){
+        background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.45),), url("../img/home/desktop/image-hero-paramour.jpg");;    
+        padding: $hero-desktop-padding;
     }
 
     // .hero-content{
@@ -17,7 +22,16 @@
     h1{
         // margin-bottom: 0.1em;
         font-weight: $fw-medium;
-        font-size: 2.5em;
+        font-size: 2.5rem;
+        margin-left: -3.5px;
+
+        @include respond(tablet){
+            font-size: 3rem;
+        }
+
+        @include respond(desktop){
+            font-weight: $fw-bold;
+        }
     }
 
     .hero-desc{

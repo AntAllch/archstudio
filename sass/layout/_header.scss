@@ -1,10 +1,12 @@
 header{
     display: none;
-    background-color: yellow;
     padding: $header-tablet-padding;
 
     @include respond(tablet){
         display: block;
-        
+    }
+
+    @include respond(desktop){
+        padding: $header-desktop-padding;
     }
 }

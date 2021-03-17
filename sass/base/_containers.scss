@@ -1,15 +1,10 @@
-// .container{
+.container{
 
-//     // CHANGE WIDTH AND MARGIN TO SUIT YOUR DESIGN
-//     // THE "MARGIN: 0 AUTO;" MAKES SURE THE CONTAINER IS IN THE CENTRE OF THE PAGE, ON THE X AXIS
+    // CHANGE WIDTH AND MARGIN TO SUIT YOUR DESIGN
+    // THE "MARGIN: 0 AUTO;" MAKES SURE THE CONTAINER IS IN THE CENTRE OF THE PAGE, ON THE X AXIS
 
-//     // @include respond(tablet){
-//     //     width: 573px;
-//     //     margin: 0 auto;
-//     // }
-
-//     // @include respond(desktop){
-//     //     width: 1110px;
-//     //     margin: 0 auto;
-//     // }
-// }
+    
+    width: 75%;
+    max-width: 1110px;
+    margin: 0 auto;
+}

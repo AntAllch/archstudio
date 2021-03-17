@@ -1,0 +1,36 @@
+.pagetags-group{
+    transform: rotate(90deg);
+    transform-origin: bottom left;
+    position: absolute;
+    top: -14px;
+    left: 35px;
+    display: none;
+
+    @include respond(tablet){
+        display: block;
+    }
+
+    @include respond(desktop){
+        left: 75px;
+    }
+}
+
+.page-tags{
+    color: $light-grey;
+    font-size: 0.7em;
+    transform-origin: center;
+    position: relative;
+    margin-left: 12.5em;
+    letter-spacing: 10px;
+
+    &::before{
+        content: "";
+        background-color: $light-grey;
+        width: 100px;
+        height: 1px;
+        position: absolute;
+        top: 50%;
+        left: -150px;
+        transform: translateY(-50%);
+    }
+}
