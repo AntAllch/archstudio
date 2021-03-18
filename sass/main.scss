@@ -1,6 +1,5 @@
 @import "reset/reset";
 
-@import "base/containers";
 @import "base/typography";
 
 @import "abstracts/colors";
@@ -10,6 +9,8 @@
 @import "abstracts/transitions";
 @import "abstracts/typography";
 
+@import "base/containers";
+
 @import "components/buttons";
 
 @import "layout/pagetags";
@@ -17,3 +18,4 @@
 @import "layout/nav";
 @import "layout/mobilenav";
 @import "layout/hero";
+@import "layout/welcome";

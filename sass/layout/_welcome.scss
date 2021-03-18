@@ -1,0 +1,72 @@
+.welcome{
+    margin: $welcome-mobile-margin;
+    position: relative;
+
+    @include respond(tablet){
+        margin: $welcome-tablet-margin;
+    }
+
+    @include respond(desktop){
+        margin: $welcome-desktop-margin;
+        padding: $welcome-desktop-padding;
+
+    }
+
+    .welcome-banner{ //BIG WELCOME
+        color: $verylight-grey;
+        font-size: 6rem;
+        margin-bottom: 2rem;
+        display: none;
+
+        @include respond(tablet){
+            display: block;
+        }
+
+        @include respond(desktop){
+            margin-bottom: -4.5rem;
+            margin-left: -10.5rem;
+            font-size: 9rem;
+        }
+    }
+
+    .welcome-title{ //Welcome to Arch Studios
+        color: $verydark-blue;
+        margin-bottom: 1em;
+        font-size: 2rem;
+        font-weight: $fw-medium;
+        letter-spacing: -3px;
+
+        @include respond(tablet){
+            font-size: 3rem;
+            max-width: 600px;
+        }
+    }
+
+    .welcome-desc{
+        font-size: $fs-desc;
+        color: $dark-grey;
+        line-height: $lineheight;
+        max-width: 585px;
+
+        &:not(:last-of-type){
+            margin-bottom: 2em;
+        }
+
+        @include respond(desktop){
+            max-width: 460px;
+        }
+        
+    }
+
+    .welcome-img{
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: none;
+
+        @include respond(desktop){
+            display: block;
+        }
+    }
+
+}

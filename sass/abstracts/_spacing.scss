@@ -5,14 +5,24 @@ $header-desktop-padding: 3em 0;
 
 $mobile-nav-padding: 3.5em 0 3.5em 3em;
 
-$hero-mobile-padding: 7em 3em;
+$hero-mobile-padding: 7em 2em;
+$hero-tablet-padding: 7em 4em;
 $hero-desktop-padding: 10em;
+$welcome-desktop-padding: 0 10em;
 
 $btn-padding: 2em 4em;
-
 
 
 //------------ Margin ------------//
 
 $tablet-margin: 0 5em;
 $desktop-margin: 0 10.3125em;
+
+$welcome-mobile-margin: 7em 2em;
+$welcome-tablet-margin: 7em 0;
+$welcome-desktop-margin: 7em 0;
+
+
+//------------- Text -------------//
+
+$lineheight: 1.7;

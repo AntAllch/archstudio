@@ -9,7 +9,7 @@
 
     @include respond(tablet){
         background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.45),), url("../img/home/tablet/image-hero-paramour.jpg");;    
-        // margin: $tablet-margin;
+        padding: $hero-tablet-padding;
     }
 
     @include respond(desktop){
@@ -36,8 +36,8 @@
     }
 
     .hero-desc{
-        font-size: 0.8rem;
-        line-height: 1.7;
+        font-size: $fs-desc;
+        line-height: $lineheight;
         max-width: 430px;
         margin-bottom: 5em;
     }
