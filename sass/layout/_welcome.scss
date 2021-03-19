@@ -36,10 +36,12 @@
         font-size: 2rem;
         font-weight: $fw-medium;
         letter-spacing: -3px;
+        line-height: 1.4;
 
         @include respond(tablet){
             font-size: 3rem;
             max-width: 600px;
+            line-height: 1.1;
         }
     }
 
@@ -54,7 +56,7 @@
         .welcome-desc{
             font-size: $fs-desc;
             color: $dark-grey;
-            line-height: $lineheight;
+            line-height: $lineheight-p;
             max-width: 585px;
     
             &:not(:last-of-type){

@@ -20,8 +20,7 @@
     // .hero-content{
     // }
 
-    h1{
-        // margin-bottom: 0.1em;
+    h1{ //welcome to Arch Studio
         font-weight: $fw-medium;
         font-size: 2.5rem;
         margin-left: -3.5px;
@@ -37,7 +36,7 @@
 
     .hero-desc{
         font-size: $fs-desc;
-        line-height: $lineheight;
+        line-height: $lineheight-p;
         max-width: 430px;
         margin-bottom: 5em;
     }

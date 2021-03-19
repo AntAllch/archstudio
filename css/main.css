@@ -171,14 +171,14 @@ nav {
       background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45)), url("../img/home/tablet/image-hero-paramour.jpg");
       background-image: -o-linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45)), url("../img/home/tablet/image-hero-paramour.jpg");
       background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45)), url("../img/home/tablet/image-hero-paramour.jpg");
-      padding: 7em 4em; } }
+      padding: 7em 4rem; } }
   @media screen and (min-width: 1000px) {
     .hero {
       background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.45))), url("../img/home/desktop/image-hero-paramour.jpg");
       background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45)), url("../img/home/desktop/image-hero-paramour.jpg");
       background-image: -o-linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45)), url("../img/home/desktop/image-hero-paramour.jpg");
       background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45)), url("../img/home/desktop/image-hero-paramour.jpg");
-      padding: 10em 7em; } }
+      padding: 10em 7rem; } }
   .hero h1 {
     font-weight: 500;
     font-size: 2.5rem;
@@ -245,8 +245,8 @@ nav {
       margin: 7em 0; } }
   @media screen and (min-width: 1000px) {
     .welcome {
-      margin: 10em 0;
-      padding: 0 7em; } }
+      margin: 12em 0;
+      padding: 0 7rem; } }
   .welcome .welcome-banner {
     color: #EEEFF4;
     font-size: 6rem;
@@ -266,11 +266,13 @@ nav {
     margin-bottom: 0.8em;
     font-size: 2rem;
     font-weight: 500;
-    letter-spacing: -3px; }
+    letter-spacing: -3px;
+    line-height: 1.4; }
     @media screen and (min-width: 600px) {
       .welcome .welcome-title {
         font-size: 3rem;
-        max-width: 600px; } }
+        max-width: 600px;
+        line-height: 1.1; } }
   .welcome .welcome-desc-group {
     background-color: #fff; }
     @media screen and (min-width: 1000px) {
@@ -299,6 +301,39 @@ nav {
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.55)), url("/img/home/mobile/image-small-team.jpg");
   background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.55)), url("/img/home/mobile/image-small-team.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.55)), url("/img/home/mobile/image-small-team.jpg");
-  padding: 12rem 2rem; }
+  background-size: cover;
+  background-position: center;
+  padding: 12em 2em; }
+  @media screen and (min-width: 600px) {
+    .about-promo {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.55))), url("/img/home/tablet/image-small-team.jpg");
+      background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.55)), url("/img/home/tablet/image-small-team.jpg");
+      background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.55)), url("/img/home/tablet/image-small-team.jpg");
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.55)), url("/img/home/tablet/image-small-team.jpg");
+      background-size: cover;
+      background-position: center;
+      padding: 12em 4rem; } }
+  @media screen and (min-width: 1000px) {
+    .about-promo {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.55))), url("/img/home/desktop/image-small-team.jpg");
+      background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.55)), url("/img/home/desktop/image-small-team.jpg");
+      background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.55)), url("/img/home/desktop/image-small-team.jpg");
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.55)), url("/img/home/desktop/image-small-team.jpg");
+      background-size: cover;
+      background-position: center;
+      padding: 8em 7rem; } }
   .about-promo .aboutpromo-title {
-    color: white; }
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    line-height: 1.4;
+    letter-spacing: -3px; }
+    @media screen and (min-width: 600px) {
+      .about-promo .aboutpromo-title {
+        font-size: 3rem;
+        line-height: 1.1; } }
+    @media screen and (min-width: 1000px) {
+      .about-promo .aboutpromo-title {
+        line-height: normal;
+        margin-bottom: 1rem; } }

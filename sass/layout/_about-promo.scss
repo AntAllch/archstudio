@@ -1,10 +1,34 @@
 .about-promo{
-    background-image: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.55),), url("/img/home/mobile/image-small-team.jpg");
+    @include imagejpg-mobile(image-small-team);
     padding: $aboutpromo-mobile-padding;
 
+    @include respond(tablet){
+        @include imagejpg-tablet(image-small-team);
+        padding: $aboutpromo-tablet-padding;
+    }
+    
+    @include respond(desktop){
+        @include imagejpg-desktop(image-small-team);
+        padding: $aboutpromo-desktop-padding;
+    }
+
     .aboutpromo-title{
-        // font-size: 2rem;
         color: white;
+        font-size: 2rem;
+        font-weight: $fw-medium;
+        margin-bottom: 2rem;
+        line-height: 1.4;
+        letter-spacing: -3px;
+
+        @include respond(tablet){
+            font-size: 3rem;
+            line-height: 1.1;
+        }
+
+        @include respond(desktop){
+            line-height: normal;
+            margin-bottom: 1rem;
+        }
     }
 
 }

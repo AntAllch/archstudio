@@ -1,6 +1,22 @@
-@mixin imagejpg($bg){
+@mixin imagejpg-mobile($bg){
     background: {
-        image: url("../../img//home/mobile/#{$bg}.jpg");
+        image: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.55)), url("/img/home/mobile/#{$bg}.jpg");
+        size: cover;
+        position: center;
+    }
+}
+
+@mixin imagejpg-tablet($bg){
+    background: {
+        image: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.55)), url("/img/home/tablet/#{$bg}.jpg");
+        size: cover;
+        position: center;
+    }
+}
+
+@mixin imagejpg-desktop($bg){
+    background: {
+        image: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.55)), url("/img/home/desktop/#{$bg}.jpg");
         size: cover;
         position: center;
     }
@@ -30,21 +46,6 @@
     }
 }
 
-@mixin imagejpg-fade($fbg){
-    background: {
-        image: linear-gradient($overlay, $overlay), url("../img/#{$fbg}.jpg");
-        size: cover;
-        position: center;
-    }
-}
-
-@mixin imagejpg-fadewhite($fbg){
-    background: {
-        image: linear-gradient($white-trans, $white-trans), url("../img/#{$fbg}.jpg");
-        size: cover;
-        position: center;
-    }
-}
 
 @mixin size($size){
     width: #{$size}px;
