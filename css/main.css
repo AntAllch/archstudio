@@ -178,7 +178,7 @@ nav {
       background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45)), url("../img/home/desktop/image-hero-paramour.jpg");
       background-image: -o-linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45)), url("../img/home/desktop/image-hero-paramour.jpg");
       background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45)), url("../img/home/desktop/image-hero-paramour.jpg");
-      padding: 10em; } }
+      padding: 10em 7em; } }
   .hero h1 {
     font-weight: 500;
     font-size: 2.5rem;
@@ -245,12 +245,13 @@ nav {
       margin: 7em 0; } }
   @media screen and (min-width: 1000px) {
     .welcome {
-      margin: 7em 0;
-      padding: 0 10em; } }
+      margin: 10em 0;
+      padding: 0 7em; } }
   .welcome .welcome-banner {
     color: #EEEFF4;
     font-size: 6rem;
     margin-bottom: 2rem;
+    letter-spacing: -10px;
     display: none; }
     @media screen and (min-width: 600px) {
       .welcome .welcome-banner {
@@ -258,11 +259,11 @@ nav {
     @media screen and (min-width: 1000px) {
       .welcome .welcome-banner {
         margin-bottom: -4.5rem;
-        margin-left: -10.5rem;
+        margin-left: -7.5rem;
         font-size: 9rem; } }
   .welcome .welcome-title {
     color: #1B1D23;
-    margin-bottom: 1em;
+    margin-bottom: 0.8em;
     font-size: 2rem;
     font-weight: 500;
     letter-spacing: -3px; }
@@ -270,21 +271,34 @@ nav {
       .welcome .welcome-title {
         font-size: 3rem;
         max-width: 600px; } }
-  .welcome .welcome-desc {
-    font-size: 0.8rem;
-    color: #60636D;
-    line-height: 1.7;
-    max-width: 585px; }
-    .welcome .welcome-desc:not(:last-of-type) {
-      margin-bottom: 2em; }
+  .welcome .welcome-desc-group {
+    background-color: #fff; }
     @media screen and (min-width: 1000px) {
-      .welcome .welcome-desc {
-        max-width: 460px; } }
+      .welcome .welcome-desc-group {
+        max-width: 460px;
+        padding: 1em 1em 1em 0; } }
+    .welcome .welcome-desc-group .welcome-desc {
+      font-size: 0.8rem;
+      color: #60636D;
+      line-height: 1.7;
+      max-width: 585px; }
+      .welcome .welcome-desc-group .welcome-desc:not(:last-of-type) {
+        margin-bottom: 2em; }
   .welcome .welcome-img {
     position: absolute;
     top: 0;
     right: 0;
+    z-index: -10;
     display: none; }
     @media screen and (min-width: 1000px) {
       .welcome .welcome-img {
         display: block; } }
+
+.about-promo {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.55))), url("/img/home/mobile/image-small-team.jpg");
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.55)), url("/img/home/mobile/image-small-team.jpg");
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.55)), url("/img/home/mobile/image-small-team.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.55)), url("/img/home/mobile/image-small-team.jpg");
+  padding: 12rem 2rem; }
+  .about-promo .aboutpromo-title {
+    color: white; }

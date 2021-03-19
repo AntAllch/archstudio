@@ -1,0 +1,10 @@
+.about-promo{
+    background-image: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.55),), url("/img/home/mobile/image-small-team.jpg");
+    padding: $aboutpromo-mobile-padding;
+
+    .aboutpromo-title{
+        // font-size: 2rem;
+        color: white;
+    }
+
+}
