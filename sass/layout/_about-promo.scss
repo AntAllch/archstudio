@@ -1,27 +1,27 @@
 .about-promo{
-    @include imagejpg-mobile(image-small-team);
+    @include imagejpg-fademobile(image-small-team);
     padding: $aboutpromo-mobile-padding;
 
     @include respond(tablet){
-        @include imagejpg-tablet(image-small-team);
+        @include imagejpg-fadetablet(image-small-team);
         padding: $aboutpromo-tablet-padding;
     }
     
     @include respond(desktop){
-        @include imagejpg-desktop(image-small-team);
+        @include imagejpg-fadedesktop(image-small-team);
         padding: $aboutpromo-desktop-padding;
     }
 
     .aboutpromo-title{
         color: white;
-        font-size: 2rem;
+        font-size: $fs-mobile-title;
         font-weight: $fw-medium;
         margin-bottom: 2rem;
         line-height: 1.4;
         letter-spacing: -3px;
 
         @include respond(tablet){
-            font-size: 3rem;
+            font-size: $fs-tablet-title;
             line-height: 1.1;
         }
 

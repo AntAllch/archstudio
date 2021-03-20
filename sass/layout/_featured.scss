@@ -1,0 +1,101 @@
+.featured{
+    margin: $featured-mobile-margin; 
+    position: relative;
+
+    @include respond(tablet){
+        margin: $featured-tablet-margin;    
+    }
+
+    .featured-title{ //Featured
+        font-size: $fs-mobile-title;
+        font-weight: $fw-medium;
+        margin-bottom: 1em;
+
+        @include respond(tablet){
+            font-size: $fs-tablet-title;
+        }
+    }
+
+    .featured-groups{
+
+        @include respond(desktop){
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2em
+        }
+
+        .featured-group{ //Box with background image on it
+            color: $white;
+            height: 240px;
+            margin-bottom: 1.5em;
+            position: relative;
+            padding: 1.5em;
+            display: flex;
+            align-items: flex-end;
+            overflow: hidden;
+
+            @include respond(desktop){
+                height: 560px;
+            }
+
+            .featuredgroup-text{
+
+                p:first-child{
+                    font-size: 1.2rem;
+                    margin-bottom: 0.5rem;
+                }
+            }
+        }
+
+        .featured-number{
+            color: rgba(#ffffff, 0.5);
+            font-size: 10rem;
+            position: absolute;
+            bottom: -20px;
+            right: 20px;
+            display: none;
+
+            @include respond(tablet){
+                display: block;
+            }
+
+            @include respond(tablet){
+                top: 80px;
+                right: -15px;
+            }
+        }
+
+        .feature-1,
+        .feature-2,
+        .feature-3{
+            background-position: center;
+            background-size: cover;
+        }
+
+        .feature-1{
+            background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.55),), url("../img/portfolio/tablet/image-del-sol.jpg");
+
+            @include respond(desktop){    
+               background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.55),), url("../img/portfolio/desktop/image-del-sol.jpg");
+            }
+        }
+
+        .feature-2{
+            background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.55),), url("../img/portfolio/tablet/image-228b.jpg");
+
+            @include respond(desktop){
+                background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.55),), url("../img/portfolio/desktop/image-228b.jpg");     
+            }
+        }
+        
+        .feature-3{
+            background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.55),), url("../img/portfolio/tablet/image-prototype.jpg");
+
+            @include respond(desktop){
+                background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.55),), url("../img/portfolio/desktop/image-prototype.jpg");    
+            }
+        }
+
+    }
+
+}

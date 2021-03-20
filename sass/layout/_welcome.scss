@@ -33,13 +33,13 @@
     .welcome-title{ //Welcome to Arch Studios
         color: $verydark-blue;
         margin-bottom: 0.8em;
-        font-size: 2rem;
+        font-size: $fs-mobile-title;
         font-weight: $fw-medium;
         letter-spacing: -3px;
         line-height: 1.4;
 
         @include respond(tablet){
-            font-size: 3rem;
+            font-size: $fs-tablet-title;
             max-width: 600px;
             line-height: 1.1;
         }

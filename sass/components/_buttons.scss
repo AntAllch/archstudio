@@ -14,3 +14,14 @@
         background-color: $light-grey;
     }
 }
+
+.featured-btn{
+    width: 100%;
+
+    @include respond(desktop){
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: initial;
+    }
+}

@@ -1,4 +1,4 @@
-@mixin imagejpg-mobile($bg){
+@mixin imagejpg-fademobile($bg){
     background: {
         image: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.55)), url("/img/home/mobile/#{$bg}.jpg");
         size: cover;
@@ -6,7 +6,7 @@
     }
 }
 
-@mixin imagejpg-tablet($bg){
+@mixin imagejpg-fadetablet($bg){
     background: {
         image: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.55)), url("/img/home/tablet/#{$bg}.jpg");
         size: cover;
@@ -14,7 +14,7 @@
     }
 }
 
-@mixin imagejpg-desktop($bg){
+@mixin imagejpg-fadedesktop($bg){
     background: {
         image: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.55)), url("/img/home/desktop/#{$bg}.jpg");
         size: cover;
@@ -22,13 +22,36 @@
     }
 }
 
-@mixin imagepng($bg){
+@mixin imagejpg-mobile($bg){
     background: {
-        image: url("../img/#{$bg}.png");
+        image: url("/img/portfolio/mobile/#{$bg}.jpg");
         size: cover;
         position: center;
     }
 }
+
+@mixin imagejpg-tablet($bg){
+    background: {
+        image: url("/img/portfolio/tablet/#{$bg}.jpg");
+        size: cover;
+        position: center;
+    }
+}
+
+@mixin imagejpg-desktop($bg){
+    background: {
+        image: url("/img/portfolio/desktop/#{$bg}.jpg");
+        size: cover;
+        position: center;
+    }
+}
+
+
+
+
+
+
+
 
 @mixin gridimage($gbg){
     background: {
