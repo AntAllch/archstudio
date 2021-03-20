@@ -9,6 +9,9 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+html {
+  overflow: hidden; }
+
 * {
   font-family: "Spartan", sans-serif; }
 
