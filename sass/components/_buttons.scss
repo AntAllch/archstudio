@@ -4,6 +4,7 @@
     border: none;
     color: $white;
     cursor: pointer;
+    transition: $transition-backgroundcolor;
 
     &:hover,
     &:focus{
@@ -24,4 +25,15 @@
         right: 0;
         width: initial;
     }
+}
+
+.footer-btn{
+
+    @include respond(desktop){
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+
 }

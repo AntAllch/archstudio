@@ -58,7 +58,7 @@
             color: $verydark-blue;
             opacity: 0;
             pointer-events: none;
-            transition: $transition-mobile-links;
+            transition: $transition-opacity;
 
             &:hover,
             &:focus{
