@@ -26,15 +26,11 @@
             align-items: flex-end;
             overflow: hidden;
             transition: $transition-filter;
+            @include hover-desaturate();
     
             @include respond(desktop){ //1000px
                 height: 400px;
                 margin-bottom: 0;
-            }
-
-            &:hover{
-                cursor: pointer;
-                filter: saturate(0);
             }
     
             .portfoliogroup-text{

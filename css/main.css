@@ -80,6 +80,7 @@ header {
   header .page-tags {
     color: #C8CCD8;
     font-size: 0.7em;
+    width: 150px;
     -webkit-transform-origin: center;
     -ms-transform-origin: center;
     transform-origin: center;
@@ -384,13 +385,13 @@ nav {
     -o-transition: filter 250ms ease-in-out;
     transition: filter 250ms ease-in-out;
     transition: filter 250ms ease-in-out, -webkit-filter 250ms ease-in-out; }
-    @media screen and (min-width: 1000px) {
-      .featured .featured-groups .featured-group {
-        height: 560px; } }
     .featured .featured-groups .featured-group:hover {
       cursor: pointer;
       -webkit-filter: saturate(0);
       filter: saturate(0); }
+    @media screen and (min-width: 1000px) {
+      .featured .featured-groups .featured-group {
+        height: 560px; } }
     .featured .featured-groups .featured-group .featuredgroup-text p:first-child {
       font-size: 1.2rem;
       margin-bottom: 0.5rem; }
@@ -550,14 +551,14 @@ footer {
     -o-transition: filter 250ms ease-in-out;
     transition: filter 250ms ease-in-out;
     transition: filter 250ms ease-in-out, -webkit-filter 250ms ease-in-out; }
-    @media screen and (min-width: 1000px) {
-      .portfolio .portfolio-groups .portfolio-group {
-        height: 400px;
-        margin-bottom: 0; } }
     .portfolio .portfolio-groups .portfolio-group:hover {
       cursor: pointer;
       -webkit-filter: saturate(0);
       filter: saturate(0); }
+    @media screen and (min-width: 1000px) {
+      .portfolio .portfolio-groups .portfolio-group {
+        height: 400px;
+        margin-bottom: 0; } }
     .portfolio .portfolio-groups .portfolio-group .portfoliogroup-text p:first-child {
       font-size: 1.2rem;
       margin-bottom: 0.5rem; }

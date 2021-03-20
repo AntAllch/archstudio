@@ -34,14 +34,10 @@
             align-items: flex-end;
             overflow: hidden;
             transition: $transition-filter;
+            @include hover-desaturate();
 
             @include respond(desktop){ //1000px 
                 height: 560px;
-            }
-
-            &:hover{
-                cursor: pointer;
-                filter: saturate(0);
             }
 
             .featuredgroup-text{
