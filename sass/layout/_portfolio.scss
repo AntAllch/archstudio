@@ -1,0 +1,115 @@
+.portfolio{
+    margin: $portfolio-mobile-margin;
+
+    @include respond(tablet){
+        margin: $portfolio-tablet-margin;    
+    }
+
+
+    .portfolio-groups{
+
+        @include respond(desktop){ //1000px
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2em
+        }
+
+        .portfolio-group{ //Box with background image on it
+    
+            color: $white;
+            background-color: yellowgreen;
+            height: 240px;
+            margin-bottom: 1.5em;
+            position: relative;
+            padding: 1.5em;
+            display: flex;
+            align-items: flex-end;
+            overflow: hidden;
+            transition: $transition-filter;
+    
+            @include respond(desktop){ //1000px
+                height: 400px;
+                margin-bottom: 0;
+            }
+
+            &:hover{
+                cursor: pointer;
+                filter: saturate(0);
+            }
+    
+            .portfoliogroup-text{
+    
+                p:first-child{
+                    font-size: 1.2rem;
+                    margin-bottom: 0.5rem;
+                }
+            }
+        }
+    
+        .portfolio-1,
+        .portfolio-2,
+        .portfolio-3,
+        .portfolio-4,
+        .portfolio-5,
+        .portfolio-6,
+        .portfolio-7,
+        .portfolio-8,
+        .portfolio-9,
+        .portfolio-10,
+        .portfolio-11,
+        .portfolio-12{
+            background-position: center;
+            background-size: cover;
+        }
+    
+        .portfolio-1{
+            background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.55),), url("../img/portfolio/tablet/image-seraph.jpg");
+    
+            @include respond(desktop){ //1000px    
+               background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.55),), url("../img/portfolio/desktop/image-seraph.jpg");
+            }
+        }
+    
+        .portfolio-2{
+            background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.55),), url("../img/portfolio/tablet/image-eebox.jpg");
+    
+            @include respond(desktop){ //1000px    
+               background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.55),), url("../img/portfolio/desktop/image-eebox.jpg");
+            }
+        }
+    
+        .portfolio-3{
+            background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.55),), url("../img/portfolio/tablet/image-federal.jpg");
+    
+            @include respond(desktop){    
+               background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.55),), url("../img/portfolio/desktop/image-federal.jpg");
+            }
+        }
+    
+        .portfolio-4{
+            background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.55),), url("../img/portfolio/tablet/image-del-sol.jpg");
+    
+            @include respond(desktop){ //1000px    
+               background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.55),), url("../img/portfolio/desktop/image-del-sol.jpg");
+            }
+        }
+    
+        .portfolio-5{
+            background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.55),), url("../img/portfolio/tablet/image-prototype.jpg");
+    
+            @include respond(desktop){ //1000px
+                background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.55),), url("../img/portfolio/desktop/image-prototype.jpg");     
+            }
+        }
+        
+        .portfolio-6{
+            background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.55),), url("../img/portfolio/tablet/image-228b.jpg");
+    
+            @include respond(desktop){ //1000px
+                background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.55),), url("../img/portfolio/desktop/image-228b.jpg");    
+            }
+        }
+
+    }
+
+}

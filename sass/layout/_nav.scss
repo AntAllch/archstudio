@@ -10,7 +10,7 @@ nav{
 
     .nav-item{ //li
         list-style: none;
-        margin-left: 4em;
+        margin-left: 3.6em;
         font-size: 0.7em;
 
         @include respond(desktop){

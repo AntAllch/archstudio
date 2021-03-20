@@ -1,14 +1,11 @@
 .about-promo{
-    @include imagejpg-fademobile(image-small-team);
+    background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.45),), url("../img/home/mobile/image-small-team.jpg");
+    background-position: center;
+    background-size: cover;
     padding: $aboutpromo-mobile-padding;
 
     @include respond(tablet){
-        @include imagejpg-fadetablet(image-small-team);
-        padding: $aboutpromo-tablet-padding;
-    }
-    
-    @include respond(desktop){
-        @include imagejpg-fadedesktop(image-small-team);
+        background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.45),), url("../img/home/desktop/image-small-team.jpg");
         padding: $aboutpromo-desktop-padding;
     }
 

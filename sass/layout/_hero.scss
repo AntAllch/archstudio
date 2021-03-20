@@ -37,46 +37,5 @@
         margin-bottom: 5em;
     }
 
-    .pagetags-group{
-        transform: rotate(90deg);
-        transform-origin: bottom left;
-        position: absolute;
-        top: -14px;
-        left: 35px;
-        display: none;
     
-        @include respond(tablet){
-            display: block;
-        }
-    
-        @include respond(desktop){
-            left: 75px;
-        }
-    }
-    
-    .page-tags{
-        color: $light-grey;
-        font-size: 0.7em;
-        transform-origin: center;
-        position: absolute;
-        top: 70px;
-        left: -120px;
-        margin-left: 12.5em;
-        letter-spacing: 10px;
-
-        @include respond(desktop){
-            top: 130px;
-        }
-    
-        &::before{
-            content: "";
-            background-color: $light-grey;
-            width: 100px;
-            height: 1px;
-            position: absolute;
-            top: 50%;
-            left: -150px;
-            transform: translateY(-50%);
-        }
-    }
 }

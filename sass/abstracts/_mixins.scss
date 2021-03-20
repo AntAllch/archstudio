@@ -6,22 +6,6 @@
     }
 }
 
-@mixin imagejpg-fadetablet($bg){
-    background: {
-        image: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.55)), url("/img/home/tablet/#{$bg}.jpg");
-        size: cover;
-        position: center;
-    }
-}
-
-@mixin imagejpg-fadedesktop($bg){
-    background: {
-        image: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.55)), url("/img/home/desktop/#{$bg}.jpg");
-        size: cover;
-        position: center;
-    }
-}
-
 @mixin imagejpg-mobile($bg){
     background: {
         image: url("/img/portfolio/mobile/#{$bg}.jpg");
@@ -30,19 +14,10 @@
     }
 }
 
-@mixin imagejpg-tablet($bg){
-    background: {
-        image: url("/img/portfolio/tablet/#{$bg}.jpg");
-        size: cover;
-        position: center;
-    }
-}
-
-@mixin imagejpg-desktop($bg){
-    background: {
-        image: url("/img/portfolio/desktop/#{$bg}.jpg");
-        size: cover;
-        position: center;
+@mixin hover-desaturate(){
+    &:hover{
+        cursor: pointer;
+        filter: saturate(0);
     }
 }
 
