@@ -1,0 +1,98 @@
+.about-hero{
+    
+    @include respond(desktop){
+        display: flex;
+        // justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .abouthero-img{
+        background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55),), url("../img/about/mobile/image-hero.jpg");
+        @include center-image();
+        height: 240px;
+        position: relative;
+
+        @include respond(tablet){
+            background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55),), url("../img/about/tablet/image-hero.jpg");
+            height: 720px;
+            margin-bottom: 5em;
+        }
+
+        @include respond(desktop){
+            background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55),), url("../img/about/desktop/image-hero.jpg");
+            width: 60%;
+            margin-bottom: 0;
+        }
+
+        &::before{ //BIG WHITE SQUARE
+            content: "";
+            width: 90%;
+            height: 50px;
+            background-color: $white;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+            @include respond(tablet){
+                right: 0;
+                left: initial;
+                height: 50%;
+            }
+
+            @include respond(desktop){
+                width: 20%;
+            }
+        }
+    }
+
+    .abouthero-textgroup{
+        padding: $abouthero-mobile-padding;
+
+        @include respond(tablet){
+            position: absolute;
+            top: 39%;
+            left: 20%;
+            width: 355px;
+        }
+
+        @include respond(desktop){
+            padding: $abouthero-desktop-padding;
+            width: 40%;
+            position: initial;
+            z-index: 1000;
+        }
+
+        .abouthero-banner{ //BIG ABOUT
+            margin-bottom: 2rem;
+            position: relative;
+
+            &::before{
+                content: "";
+                width: 15%;
+                height: 1px;
+                background: $light-grey;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                display: none;
+
+                @include respond (desktop){
+                    display: block;
+                }
+            }
+
+            @include respond(desktop){
+                margin-left: -8%;
+                font-size: 11.5vw;
+            }
+
+            @include respond(largedesktop){
+                font-size: 10.35rem;
+            }
+        }
+
+        .abouthero-title{ //Your team of professionals
+            margin-bottom: 0.8em;
+        }
+    }
+}

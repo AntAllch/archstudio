@@ -5,3 +5,61 @@
 *{
     font-family: $ff-main;
 }
+
+.title{
+    color: $verydark-blue;
+    font-size: $fs-mobile-title;
+    font-weight: $fw-medium;
+    letter-spacing: -3px;
+    line-height: 1.4;
+
+    @include respond(tablet){
+        font-size: $fs-tablet-title;
+        max-width: 600px;
+        line-height: 1.1;
+    }
+}
+
+.desc{
+    font-size: $fs-desc;
+    color: $dark-grey;
+    line-height: $lineheight-p;
+    max-width: 585px;
+
+    &:not(:last-of-type){
+        margin-bottom: 2em;
+    }
+
+        
+    // @include respond(desktop){
+    //     max-width: 460px;
+    // }  
+    
+}
+
+.desc-group{
+    background-color: $white;
+
+    @include respond(desktop){
+        max-width: 460px;
+        padding: 1em 1em 1em 0;
+    }  
+}
+
+
+.banner{ //BIG WELCOME
+    color: $verylight-grey;
+    font-size: 6rem;
+    letter-spacing: -10px;
+    display: none;
+
+    @include respond(tablet){
+        display: block;
+    }
+
+    @include respond(desktop){
+        margin-bottom: -4.5rem;
+        margin-left: -7.5rem;
+        font-size: 9rem;
+    }
+}

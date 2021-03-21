@@ -15,6 +15,47 @@ html {
 * {
   font-family: "Spartan", sans-serif; }
 
+.title {
+  color: #1B1D23;
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: -3px;
+  line-height: 1.4; }
+  @media screen and (min-width: 600px) {
+    .title {
+      font-size: 3rem;
+      max-width: 600px;
+      line-height: 1.1; } }
+
+.desc {
+  font-size: 0.8rem;
+  color: #60636D;
+  line-height: 1.7;
+  max-width: 585px; }
+  .desc:not(:last-of-type) {
+    margin-bottom: 2em; }
+
+.desc-group {
+  background-color: #fff; }
+  @media screen and (min-width: 1000px) {
+    .desc-group {
+      max-width: 460px;
+      padding: 1em 1em 1em 0; } }
+
+.banner {
+  color: #EEEFF4;
+  font-size: 6rem;
+  letter-spacing: -10px;
+  display: none; }
+  @media screen and (min-width: 600px) {
+    .banner {
+      display: block; } }
+  @media screen and (min-width: 1000px) {
+    .banner {
+      margin-bottom: -4.5rem;
+      margin-left: -7.5rem;
+      font-size: 9rem; } }
+
 @media screen and (min-width: 600px) {
   .container {
     width: 75%;
@@ -271,44 +312,14 @@ nav {
       margin: 12em 0;
       padding: 0 7rem; } }
   .welcome .welcome-banner {
-    color: #EEEFF4;
-    font-size: 6rem;
-    margin-bottom: 2rem;
-    letter-spacing: -10px;
-    display: none; }
-    @media screen and (min-width: 600px) {
-      .welcome .welcome-banner {
-        display: block; } }
+    margin-bottom: 2rem; }
     @media screen and (min-width: 1000px) {
       .welcome .welcome-banner {
         margin-bottom: -4.5rem;
         margin-left: -7.5rem;
         font-size: 9rem; } }
   .welcome .welcome-title {
-    color: #1B1D23;
-    margin-bottom: 0.8em;
-    font-size: 2rem;
-    font-weight: 500;
-    letter-spacing: -3px;
-    line-height: 1.4; }
-    @media screen and (min-width: 600px) {
-      .welcome .welcome-title {
-        font-size: 3rem;
-        max-width: 600px;
-        line-height: 1.1; } }
-  .welcome .welcome-desc-group {
-    background-color: #fff; }
-    @media screen and (min-width: 1000px) {
-      .welcome .welcome-desc-group {
-        max-width: 460px;
-        padding: 1em 1em 1em 0; } }
-    .welcome .welcome-desc-group .welcome-desc {
-      font-size: 0.8rem;
-      color: #60636D;
-      line-height: 1.7;
-      max-width: 585px; }
-      .welcome .welcome-desc-group .welcome-desc:not(:last-of-type) {
-        margin-bottom: 2em; }
+    margin-bottom: 0.8em; }
   .welcome .welcome-img {
     position: absolute;
     top: 0;
@@ -324,8 +335,8 @@ nav {
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45)), url("../img/home/mobile/image-small-team.jpg");
   background-image: -o-linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45)), url("../img/home/mobile/image-small-team.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45)), url("../img/home/mobile/image-small-team.jpg");
-  background-position: center;
   background-size: cover;
+  background-position: center;
   padding: 12em 2em; }
   @media screen and (min-width: 600px) {
     .about-promo {
@@ -415,8 +426,8 @@ nav {
   .featured .featured-groups .feature-1,
   .featured .featured-groups .feature-2,
   .featured .featured-groups .feature-3 {
-    background-position: center;
-    background-size: cover; }
+    background-size: cover;
+    background-position: center; }
   .featured .featured-groups .feature-1 {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.55))), url("../img/portfolio/tablet/image-del-sol.jpg");
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.55)), url("../img/portfolio/tablet/image-del-sol.jpg");
@@ -577,8 +588,8 @@ footer {
   .portfolio .portfolio-groups .portfolio-10,
   .portfolio .portfolio-groups .portfolio-11,
   .portfolio .portfolio-groups .portfolio-12 {
-    background-position: center;
-    background-size: cover; }
+    background-size: cover;
+    background-position: center; }
   .portfolio .portfolio-groups .portfolio-1 {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.55))), url("../img/portfolio/tablet/image-seraph.jpg");
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.55)), url("../img/portfolio/tablet/image-seraph.jpg");
@@ -645,3 +656,107 @@ footer {
         background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.55)), url("../img/portfolio/desktop/image-228b.jpg");
         background-image: -o-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.55)), url("../img/portfolio/desktop/image-228b.jpg");
         background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.55)), url("../img/portfolio/desktop/image-228b.jpg"); } }
+
+@media screen and (min-width: 1000px) {
+  .about-hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end; } }
+
+.about-hero .abouthero-img {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.55))), url("../img/about/mobile/image-hero.jpg");
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55)), url("../img/about/mobile/image-hero.jpg");
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55)), url("../img/about/mobile/image-hero.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55)), url("../img/about/mobile/image-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 240px;
+  position: relative; }
+  @media screen and (min-width: 600px) {
+    .about-hero .abouthero-img {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.55))), url("../img/about/tablet/image-hero.jpg");
+      background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55)), url("../img/about/tablet/image-hero.jpg");
+      background-image: -o-linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55)), url("../img/about/tablet/image-hero.jpg");
+      background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55)), url("../img/about/tablet/image-hero.jpg");
+      height: 720px;
+      margin-bottom: 5em; } }
+  @media screen and (min-width: 1000px) {
+    .about-hero .abouthero-img {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.55))), url("../img/about/desktop/image-hero.jpg");
+      background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55)), url("../img/about/desktop/image-hero.jpg");
+      background-image: -o-linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55)), url("../img/about/desktop/image-hero.jpg");
+      background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55)), url("../img/about/desktop/image-hero.jpg");
+      width: 60%;
+      margin-bottom: 0; } }
+  .about-hero .abouthero-img::before {
+    content: "";
+    width: 90%;
+    height: 50px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+    @media screen and (min-width: 600px) {
+      .about-hero .abouthero-img::before {
+        right: 0;
+        left: initial;
+        height: 50%; } }
+    @media screen and (min-width: 1000px) {
+      .about-hero .abouthero-img::before {
+        width: 20%; } }
+
+.about-hero .abouthero-textgroup {
+  padding: 4em 2em 5em; }
+  @media screen and (min-width: 600px) {
+    .about-hero .abouthero-textgroup {
+      position: absolute;
+      top: 39%;
+      left: 20%;
+      width: 355px; } }
+  @media screen and (min-width: 1000px) {
+    .about-hero .abouthero-textgroup {
+      padding: 0em 0;
+      width: 40%;
+      position: initial;
+      z-index: 1000; } }
+  .about-hero .abouthero-textgroup .abouthero-banner {
+    margin-bottom: 2rem;
+    position: relative; }
+    .about-hero .abouthero-textgroup .abouthero-banner::before {
+      content: "";
+      width: 15%;
+      height: 1px;
+      background: #C8CCD8;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: none; }
+      @media screen and (min-width: 1000px) {
+        .about-hero .abouthero-textgroup .abouthero-banner::before {
+          display: block; } }
+    @media screen and (min-width: 1000px) {
+      .about-hero .abouthero-textgroup .abouthero-banner {
+        margin-left: -8%;
+        font-size: 11.5vw; } }
+    @media screen and (min-width: 1440px) {
+      .about-hero .abouthero-textgroup .abouthero-banner {
+        font-size: 10.35rem; } }
+  .about-hero .abouthero-textgroup .abouthero-title {
+    margin-bottom: 0.8em; }
+
+.about-heritage {
+  padding: 5em 2em;
+  position: relative; }
+  .about-heritage::before {
+    content: "";
+    background-color: #C8CCD8;
+    width: 60px;
+    height: 1px;
+    position: absolute;
+    top: 0;
+    left: 2em; }
+  .about-heritage .heritage-title {
+    margin-bottom: 0.8em; }

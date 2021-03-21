@@ -26,6 +26,12 @@
         @media screen and (min-width: 1000px){
             @content;
         }
-    }   
+    }  
+    
+    @if $breakpoint == largedesktop{
+        @media screen and (min-width: 1440px){
+            @content;
+        }
+    } 
     // ------------------------ //
 }

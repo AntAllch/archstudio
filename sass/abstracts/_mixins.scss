@@ -21,6 +21,13 @@
     }
 }
 
+@mixin center-image(){
+    background: {
+        size: cover;
+        position: center;
+    }
+}
+
 
 
 

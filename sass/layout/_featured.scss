@@ -70,8 +70,7 @@
         .feature-1,
         .feature-2,
         .feature-3{
-            background-position: center;
-            background-size: cover;
+            @include center-image();
         }
 
         .feature-1{

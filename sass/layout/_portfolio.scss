@@ -54,8 +54,7 @@
         .portfolio-10,
         .portfolio-11,
         .portfolio-12{
-            background-position: center;
-            background-size: cover;
+            @include center-image();
         }
     
         .portfolio-1{
