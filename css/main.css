@@ -31,16 +31,14 @@ html {
   font-size: 0.8rem;
   color: #60636D;
   line-height: 1.7;
-  max-width: 585px; }
-  .desc:not(:last-of-type) {
-    margin-bottom: 2em; }
+  max-width: 585px;
+  padding-bottom: 2em; }
 
 .desc-group {
   background-color: #fff; }
   @media screen and (min-width: 1000px) {
     .desc-group {
-      max-width: 460px;
-      padding: 1em 1em 1em 0; } }
+      max-width: 460px; } }
 
 .banner {
   color: #EEEFF4;
@@ -703,7 +701,7 @@ footer {
       .about-hero .abouthero-img::before {
         right: 0;
         left: initial;
-        height: 50%; } }
+        height: 51%; } }
     @media screen and (min-width: 1000px) {
       .about-hero .abouthero-img::before {
         width: 20%; } }
@@ -749,7 +747,17 @@ footer {
 
 .about-heritage {
   padding: 5em 2em;
+  margin: 0 0 0em;
   position: relative; }
+  @media screen and (min-width: 600px) {
+    .about-heritage {
+      padding: 5em 0; } }
+  @media screen and (min-width: 1000px) {
+    .about-heritage {
+      padding: 10em 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
   .about-heritage::before {
     content: "";
     background-color: #C8CCD8;
@@ -758,5 +766,48 @@ footer {
     position: absolute;
     top: 0;
     left: 2em; }
-  .about-heritage .heritage-title {
-    margin-bottom: 0.8em; }
+    @media screen and (min-width: 600px) {
+      .about-heritage::before {
+        left: 0; } }
+  .about-heritage .aboutheritage-textgroup {
+    position: relative; }
+    .about-heritage .aboutheritage-textgroup::before {
+      content: "";
+      background-color: #C8CCD8;
+      width: 60px;
+      height: 1px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: none; }
+      @media screen and (min-width: 1000px) {
+        .about-heritage .aboutheritage-textgroup::before {
+          display: block; } }
+    .about-heritage .aboutheritage-textgroup .heritage-title {
+      margin-bottom: 0.8em; }
+    @media screen and (min-width: 1000px) {
+      .about-heritage .aboutheritage-textgroup {
+        width: 50%;
+        padding-right: 2em;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end; } }
+    .about-heritage .aboutheritage-textgroup .heritage-desc {
+      max-width: 450px; }
+  .about-heritage .aboutheritage-img {
+    background-image: url("../img/about/desktop/image-heritage.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    display: none; }
+    @media screen and (min-width: 1000px) {
+      .about-heritage .aboutheritage-img {
+        display: block;
+        height: 568px; } }

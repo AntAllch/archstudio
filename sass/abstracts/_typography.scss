@@ -24,17 +24,8 @@
     font-size: $fs-desc;
     color: $dark-grey;
     line-height: $lineheight-p;
-    max-width: 585px;
-
-    &:not(:last-of-type){
-        margin-bottom: 2em;
-    }
-
-        
-    // @include respond(desktop){
-    //     max-width: 460px;
-    // }  
-    
+    max-width: 585px;   
+    padding-bottom: 2em;
 }
 
 .desc-group{
@@ -42,7 +33,7 @@
 
     @include respond(desktop){
         max-width: 460px;
-        padding: 1em 1em 1em 0;
+        // padding: 1em 1em 1em 0;
     }  
 }
 

@@ -1,8 +1,19 @@
 .about-heritage{
-    padding: $aboutheratige-mobile-padding;
+    padding: $aboutheritage-mobile-padding;
+    margin: $aboutheritage-mobile-margin;
+
     position: relative;
 
-    &::before{
+    @include respond(tablet){
+        padding: $aboutheritage-tablet-padding;
+    }
+
+    @include respond(desktop){
+        padding: $aboutheritage-desktop-margin;
+        display: flex;
+    }
+
+    &::before{ //little thin line
         content: "";
         background-color: $light-grey;
         width: 60px;
@@ -10,9 +21,57 @@
         position: absolute;
         top: 0;
         left: 2em;
+
+        @include respond(tablet){
+            left: 0;
+        }
     }
 
-    .heritage-title{
-        margin-bottom: 0.8em;
+    .aboutheritage-textgroup{ //Our Heritage and 3 paragraphs
+        position: relative;
+
+        &::before{ //little thin line
+            content: "";
+            background-color: $light-grey;
+            width: 60px;
+            height: 1px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+
+            @include respond(desktop){
+                display: block;
+            }
+            
+        }
+
+        .heritage-title{ //Our Heritage
+            margin-bottom: 0.8em;
+        }
+
+        @include respond(desktop){
+            width: 50%;
+            padding-right: 2em;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        .heritage-desc{ //Founded in 2007.. Specilizing in Urban.. Our Small team..
+            max-width: 450px;
+        }
+    }
+
+    .aboutheritage-img{ //Image on the right
+        background-image: url("../img/about/desktop/image-heritage.jpg");
+        @include center-image();
+        width: 50%;
+        display: none;
+
+        @include respond(desktop){
+            display: block;
+            height: 568px;
+        }
     }
 }

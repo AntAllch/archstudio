@@ -1,8 +1,7 @@
 .about-hero{
     
-    @include respond(desktop){
+    @include respond(desktop){ //1000px
         display: flex;
-        // justify-content: space-between;
         align-items: flex-end;
     }
 
@@ -12,13 +11,13 @@
         height: 240px;
         position: relative;
 
-        @include respond(tablet){
+        @include respond(tablet){ //600px
             background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55),), url("../img/about/tablet/image-hero.jpg");
             height: 720px;
             margin-bottom: 5em;
         }
 
-        @include respond(desktop){
+        @include respond(desktop){ //1000px
             background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55),), url("../img/about/desktop/image-hero.jpg");
             width: 60%;
             margin-bottom: 0;
@@ -33,14 +32,15 @@
             bottom: 0;
             left: 0;
 
-            @include respond(tablet){
+            @include respond(tablet){ //600px
                 right: 0;
                 left: initial;
-                height: 50%;
+                height: 51%;
             }
 
-            @include respond(desktop){
+            @include respond(desktop){ //1000px
                 width: 20%;
+                // height: 60%;
             }
         }
     }
@@ -48,14 +48,14 @@
     .abouthero-textgroup{
         padding: $abouthero-mobile-padding;
 
-        @include respond(tablet){
+        @include respond(tablet){ //600px
             position: absolute;
             top: 39%;
             left: 20%;
             width: 355px;
         }
 
-        @include respond(desktop){
+        @include respond(desktop){ //1000px
             padding: $abouthero-desktop-padding;
             width: 40%;
             position: initial;
@@ -81,12 +81,12 @@
                 }
             }
 
-            @include respond(desktop){
+            @include respond(desktop){ //1000px
                 margin-left: -8%;
                 font-size: 11.5vw;
             }
 
-            @include respond(largedesktop){
+            @include respond(largedesktop){ //1440px
                 font-size: 10.35rem;
             }
         }
