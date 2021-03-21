@@ -28,6 +28,12 @@
     }
 }
 
+@mixin centertop-image(){
+    background: {
+        size: cover;
+        position: top;
+    }
+}
 
 
 

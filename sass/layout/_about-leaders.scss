@@ -1,0 +1,88 @@
+.leaders{
+    padding: $aboutleaders-mobile-padding;
+
+    @include respond(tablet){
+        padding: $aboutleaders-tablet-padding;
+    }
+
+    .leaders-title{
+        margin-bottom: 2em;
+    }
+
+    .leader-groups{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(16.875rem, 1fr));
+        gap: 2em;
+        margin: 0 auto;
+    }
+
+    .leader-group{
+
+        // margin-bottom: 4em;
+
+        .leadergroup-text{
+            
+            p:first-child{ //Leader Name
+                font-size: 1.2rem;
+            }
+
+            p{
+                margin-bottom: 0.5rem;
+            }
+
+            svg{
+                transform: scale(0.8);
+                margin-left: -3px;
+            }
+
+            svg path{
+                fill: $verydark-blue;
+
+                &:hover,
+                &:focus{
+                    fill: $dark-grey;
+                }
+
+                &:active{
+                    fill: $light-grey;
+                }
+            }
+
+            .leadersocial-links{
+                text-decoration: none;
+            }
+
+        }
+
+        
+
+        .leader-img{
+            height: 400px;
+            margin-bottom: 1.5em;
+        }
+
+        .leader-1,
+        .leader-2,
+        .leader-3,
+        .leader-4{
+            @include centertop-image();
+        }
+
+        .leader-1{
+            background-image: url("../img/about/desktop/avatar-jake.jpg");
+        }
+
+        .leader-2{
+            background-image: url("../img/about/desktop/avatar-thompson.jpg");
+        }
+
+        .leader-3{
+            background-image: url("../img/about/desktop/avatar-jackson.jpg");
+        }
+
+        .leader-4{
+            background-image: url("../img/about/desktop/avatar-maria.jpg");
+        }
+
+    }
+}

@@ -811,3 +811,51 @@ footer {
       .about-heritage .aboutheritage-img {
         display: block;
         height: 568px; } }
+
+.leaders {
+  padding: 0 2em 5em; }
+  @media screen and (min-width: 600px) {
+    .leaders {
+      padding: 0 0 5em; } }
+  .leaders .leaders-title {
+    margin-bottom: 2em; }
+  .leaders .leader-groups {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16.875rem, 1fr));
+    gap: 2em;
+    margin: 0 auto; }
+  .leaders .leader-group .leadergroup-text p:first-child {
+    font-size: 1.2rem; }
+  .leaders .leader-group .leadergroup-text p {
+    margin-bottom: 0.5rem; }
+  .leaders .leader-group .leadergroup-text svg {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    margin-left: -3px; }
+  .leaders .leader-group .leadergroup-text svg path {
+    fill: #1B1D23; }
+    .leaders .leader-group .leadergroup-text svg path:hover, .leaders .leader-group .leadergroup-text svg path:focus {
+      fill: #60636D; }
+    .leaders .leader-group .leadergroup-text svg path:active {
+      fill: #C8CCD8; }
+  .leaders .leader-group .leadergroup-text .leadersocial-links {
+    text-decoration: none; }
+  .leaders .leader-group .leader-img {
+    height: 400px;
+    margin-bottom: 1.5em; }
+  .leaders .leader-group .leader-1,
+  .leaders .leader-group .leader-2,
+  .leaders .leader-group .leader-3,
+  .leaders .leader-group .leader-4 {
+    background-size: cover;
+    background-position: top; }
+  .leaders .leader-group .leader-1 {
+    background-image: url("../img/about/desktop/avatar-jake.jpg"); }
+  .leaders .leader-group .leader-2 {
+    background-image: url("../img/about/desktop/avatar-thompson.jpg"); }
+  .leaders .leader-group .leader-3 {
+    background-image: url("../img/about/desktop/avatar-jackson.jpg"); }
+  .leaders .leader-group .leader-4 {
+    background-image: url("../img/about/desktop/avatar-maria.jpg"); }
