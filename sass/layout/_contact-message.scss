@@ -1,0 +1,41 @@
+.contact-message{
+    margin: $contactmessage-mobile-margin;
+
+    @include respond(tablet){
+        margin: $contactmessage-tablet-margin;
+    }
+
+    .contactmessage-title{
+        margin-bottom: 1em;
+    }
+
+    form{
+
+        input, textarea{
+            width: 100%;
+            font-size: 1rem;
+            background-color: transparent;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid $verydark-blue;
+            padding: 0 0 1.5em 1.5em; //Up Right Bottom Left
+
+            // &:focus{
+            //     border-bottom: 2px solid black;
+            // }
+        }
+
+        input{
+            margin-bottom: 4em;
+        }
+
+        textarea{
+            height: 95px;
+            resize: none;
+        }
+
+        ::placeholder{
+            margin: 0 0 1em 1em;
+        }
+    }
+}

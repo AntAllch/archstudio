@@ -5,7 +5,9 @@
   margin: 0;
   padding: 0; }
 
-body {
+body,
+input,
+textarea {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
@@ -91,6 +93,18 @@ html {
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%); } }
+
+.submit-btn {
+  width: 80px;
+  height: 80px;
+  padding: 0;
+  margin-left: 100%;
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%); }
+  .submit-btn svg path {
+    -webkit-filter: brightness(100);
+    filter: brightness(100); }
 
 header {
   display: none;
@@ -953,11 +967,12 @@ footer {
 
 .contact-details {
   padding: 5em 2em 0;
-  margin: 0 0 10em;
+  margin: 0 0 5em;
   position: relative; }
   @media screen and (min-width: 600px) {
     .contact-details {
-      padding: 5em 0 0; } }
+      padding: 5em 0 0;
+      margin: 0 0 10em; } }
   @media screen and (min-width: 1000px) {
     .contact-details {
       margin: 0 0 6em;
@@ -1023,3 +1038,46 @@ footer {
       @media screen and (min-width: 1000px) {
         .contact-details .office-groups .office-group .contact-btn {
           margin-top: 1em; } }
+
+.map {
+  padding: 0;
+  margin: 0 0 6em 0;
+  height: 367px;
+  background-image: url("../img/contact/mobile/image-map.png");
+  background-size: cover;
+  background-position: center; }
+  @media screen and (min-width: 600px) {
+    .map {
+      background-image: url("../img/contact/tablet/image-map.png"); } }
+  @media screen and (min-width: 1000px) {
+    .map {
+      background-image: url("../img/contact/desktop/image-map.png"); } }
+
+.contact-message {
+  margin: 5em 2em 10em; }
+  @media screen and (min-width: 600px) {
+    .contact-message {
+      margin: 5em 0 10em; } }
+  .contact-message .contactmessage-title {
+    margin-bottom: 1em; }
+  .contact-message form input, .contact-message form textarea {
+    width: 100%;
+    font-size: 1rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #1B1D23;
+    padding: 0 0 1.5em 1.5em; }
+  .contact-message form input {
+    margin-bottom: 4em; }
+  .contact-message form textarea {
+    height: 95px;
+    resize: none; }
+  .contact-message form ::-webkit-input-placeholder {
+    margin: 0 0 1em 1em; }
+  .contact-message form :-ms-input-placeholder {
+    margin: 0 0 1em 1em; }
+  .contact-message form ::-ms-input-placeholder {
+    margin: 0 0 1em 1em; }
+  .contact-message form ::placeholder {
+    margin: 0 0 1em 1em; }

@@ -1,0 +1,15 @@
+.map{
+    padding: $contactmap-mobile-padding;
+    margin: $contactmap-mobile-margin;
+    height: 367px;
+    background-image:  url("../img/contact/mobile/image-map.png");
+    @include center-image();
+
+    @include respond(tablet){
+        background-image:  url("../img/contact/tablet/image-map.png");
+    }
+
+    @include respond(desktop){
+        background-image:  url("../img/contact/desktop/image-map.png");
+    }
+}

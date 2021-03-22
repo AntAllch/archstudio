@@ -1,10 +1,12 @@
 .contact-details{
     padding: $contactdetails-mobile-padding;
-    margin: $contactdetails-tablet-margin;
+    margin: $contactdetails-mobile-margin;
     position: relative;
 
     @include respond(tablet){ //600px
         padding: $contactdetails-tablet-padding;
+        margin: $contactdetails-tablet-margin;
+
     }
 
     @include respond(desktop){
