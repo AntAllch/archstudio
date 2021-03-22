@@ -816,7 +816,7 @@ footer {
   padding: 0 2em 5em; }
   @media screen and (min-width: 600px) {
     .leaders {
-      padding: 0 0 5em; } }
+      padding: 0 0 10em; } }
   .leaders .leaders-title {
     margin-bottom: 2em; }
   .leaders .leader-groups {
