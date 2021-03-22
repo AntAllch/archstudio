@@ -1,0 +1,92 @@
+.contact-details{
+    padding: $contactdetails-mobile-padding;
+    margin: $contactdetails-tablet-margin;
+    position: relative;
+
+    @include respond(tablet){ //600px
+        padding: $contactdetails-tablet-padding;
+    }
+
+    @include respond(desktop){
+        margin: $contactdetails-desktop-margin;  
+        display: flex;
+    }
+
+    &::before{
+        content: "";
+        width: 15%;
+        height: 1px;
+        background: $light-grey;
+        position: absolute;
+        top: 0;
+        left: 2em;
+
+        @include respond(tablet){ //600px
+            left: 0;
+        }
+    }
+
+    .contactdetails-title{ //Contact Details
+        margin-bottom: 3rem;
+
+        @include respond(tablet){ //600px
+            width: 200px;
+        }  
+    }
+
+    .office-groups{ //"Contact Details" and both address with button divs
+
+        @include respond(desktop){ //600px
+            display: flex;
+        }  
+
+        .office-group{ //office location and button
+            margin-bottom: 3em;
+    
+            @include respond(tablet){ //600px
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+            }  
+            
+            @include respond(desktop){ //1000px
+                flex-direction: column;
+                align-items: initial;
+                margin-left: 5.4em;
+            }
+
+            @include respond(largedesktop){
+                margin-left: 8em;
+            }
+    
+            .office{
+        
+                .branch-desc{ //Main Office, Office II
+                    padding-bottom: 1.5em;
+                }
+    
+                .office-desc{ //Mail, Adress and Phone
+                    padding-bottom: 1em;
+    
+                    &:last-of-type{ //Phone number, in this case
+                        padding-bottom: 0;
+                    }
+                }
+    
+                
+            }
+    
+            .contact-btn{ //View on Map button
+                padding: $contact-btn;
+                margin-top: 1em;
+
+    
+                @include respond(desktop){
+                    margin-top: 1em;
+                }
+            }
+        }
+
+    }
+
+}

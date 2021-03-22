@@ -747,7 +747,7 @@ footer {
 
 .about-heritage {
   padding: 5em 2em;
-  margin: 0 0 0em;
+  margin: 0;
   position: relative; }
   @media screen and (min-width: 600px) {
     .about-heritage {
@@ -859,3 +859,167 @@ footer {
     background-image: url("../img/about/desktop/avatar-jackson.jpg"); }
   .leaders .leader-group .leader-4 {
     background-image: url("../img/about/desktop/avatar-maria.jpg"); }
+
+@media screen and (min-width: 1000px) {
+  .contact-hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    margin: 0 0 10em 0; } }
+
+.contact-hero .contacthero-img {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.55))), url("../img/contact/mobile/image-hero.jpg");
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55)), url("../img/contact/mobile/image-hero.jpg");
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55)), url("../img/contact/mobile/image-hero.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55)), url("../img/contact/mobile/image-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 240px;
+  position: relative; }
+  @media screen and (min-width: 600px) {
+    .contact-hero .contacthero-img {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.55))), url("../img/contact/tablet/image-hero.jpg");
+      background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55)), url("../img/contact/tablet/image-hero.jpg");
+      background-image: -o-linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55)), url("../img/contact/tablet/image-hero.jpg");
+      background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55)), url("../img/contact/tablet/image-hero.jpg");
+      height: 720px;
+      margin-bottom: 5em; } }
+  @media screen and (min-width: 1000px) {
+    .contact-hero .contacthero-img {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.55))), url("../img/contact/desktop/image-hero.jpg");
+      background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55)), url("../img/contact/desktop/image-hero.jpg");
+      background-image: -o-linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55)), url("../img/contact/desktop/image-hero.jpg");
+      background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55)), url("../img/contact/desktop/image-hero.jpg");
+      width: 60%;
+      margin-bottom: 0; } }
+  .contact-hero .contacthero-img::before {
+    content: "";
+    width: 90%;
+    height: 50px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+    @media screen and (min-width: 600px) {
+      .contact-hero .contacthero-img::before {
+        right: 0;
+        left: initial;
+        height: 51%; } }
+    @media screen and (min-width: 1000px) {
+      .contact-hero .contacthero-img::before {
+        width: 20%; } }
+
+.contact-hero .contacthero-textgroup {
+  padding: 4em 2em 5em; }
+  @media screen and (min-width: 600px) {
+    .contact-hero .contacthero-textgroup {
+      position: absolute;
+      top: 39%;
+      left: 20%;
+      width: 355px; } }
+  @media screen and (min-width: 1000px) {
+    .contact-hero .contacthero-textgroup {
+      padding: 0em 0;
+      width: 40%;
+      position: initial;
+      z-index: 1000; } }
+  .contact-hero .contacthero-textgroup .contacthero-banner {
+    margin-bottom: 2rem;
+    position: relative; }
+    .contact-hero .contacthero-textgroup .contacthero-banner::before {
+      content: "";
+      width: 15%;
+      height: 1px;
+      background: #C8CCD8;
+      position: absolute;
+      bottom: 0;
+      left: 0.1em;
+      display: none; }
+      @media screen and (min-width: 1000px) {
+        .contact-hero .contacthero-textgroup .contacthero-banner::before {
+          display: block; } }
+    @media screen and (min-width: 1000px) {
+      .contact-hero .contacthero-textgroup .contacthero-banner {
+        margin-left: -20%;
+        font-size: 11.5vw; } }
+    @media screen and (min-width: 1440px) {
+      .contact-hero .contacthero-textgroup .contacthero-banner {
+        font-size: 10.35rem; } }
+  .contact-hero .contacthero-textgroup .contacthero-title {
+    margin-bottom: 0.8em; }
+
+.contact-details {
+  padding: 5em 2em 0;
+  margin: 0 0 10em;
+  position: relative; }
+  @media screen and (min-width: 600px) {
+    .contact-details {
+      padding: 5em 0 0; } }
+  @media screen and (min-width: 1000px) {
+    .contact-details {
+      margin: 0 0 6em;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
+  .contact-details::before {
+    content: "";
+    width: 15%;
+    height: 1px;
+    background: #C8CCD8;
+    position: absolute;
+    top: 0;
+    left: 2em; }
+    @media screen and (min-width: 600px) {
+      .contact-details::before {
+        left: 0; } }
+  .contact-details .contactdetails-title {
+    margin-bottom: 3rem; }
+    @media screen and (min-width: 600px) {
+      .contact-details .contactdetails-title {
+        width: 200px; } }
+  @media screen and (min-width: 1000px) {
+    .contact-details .office-groups {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
+  .contact-details .office-groups .office-group {
+    margin-bottom: 3em; }
+    @media screen and (min-width: 600px) {
+      .contact-details .office-groups .office-group {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: end;
+        -ms-flex-align: end;
+        align-items: flex-end; } }
+    @media screen and (min-width: 1000px) {
+      .contact-details .office-groups .office-group {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: initial;
+        -ms-flex-align: initial;
+        align-items: initial;
+        margin-left: 5.4em; } }
+    @media screen and (min-width: 1440px) {
+      .contact-details .office-groups .office-group {
+        margin-left: 8em; } }
+    .contact-details .office-groups .office-group .office .branch-desc {
+      padding-bottom: 1.5em; }
+    .contact-details .office-groups .office-group .office .office-desc {
+      padding-bottom: 1em; }
+      .contact-details .office-groups .office-group .office .office-desc:last-of-type {
+        padding-bottom: 0; }
+    .contact-details .office-groups .office-group .contact-btn {
+      padding: 1em 3em;
+      margin-top: 1em; }
+      @media screen and (min-width: 1000px) {
+        .contact-details .office-groups .office-group .contact-btn {
+          margin-top: 1em; } }

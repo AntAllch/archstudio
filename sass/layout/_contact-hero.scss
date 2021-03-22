@@ -1,0 +1,99 @@
+.contact-hero{
+    
+    @include respond(desktop){ //1000px
+        display: flex;
+        align-items: flex-end;
+        margin: $abouthero-desktop-margin;
+    }
+
+    .contacthero-img{
+        background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55),), url("../img/contact/mobile/image-hero.jpg");
+        @include center-image();
+        height: 240px;
+        position: relative;
+
+        @include respond(tablet){ //600px
+            background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55),), url("../img/contact/tablet/image-hero.jpg");
+            height: 720px;
+            margin-bottom: 5em;
+        }
+
+        @include respond(desktop){ //1000px
+            background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55),), url("../img/contact/desktop/image-hero.jpg");
+            width: 60%;
+            margin-bottom: 0;
+        }
+
+        &::before{ //BIG WHITE SQUARE
+            content: "";
+            width: 90%;
+            height: 50px;
+            background-color: $white;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+            @include respond(tablet){ //600px
+                right: 0;
+                left: initial;
+                height: 51%;
+            }
+
+            @include respond(desktop){ //1000px
+                width: 20%;
+                // height: 60%;
+            }
+        }
+    }
+
+    .contacthero-textgroup{
+        padding: $abouthero-mobile-padding;
+
+        @include respond(tablet){ //600px
+            position: absolute;
+            top: 39%;
+            left: 20%;
+            width: 355px;
+        }
+
+        @include respond(desktop){ //1000px
+            padding: $abouthero-desktop-padding;
+            width: 40%;
+            position: initial;
+            z-index: 1000;
+        }
+
+        .contacthero-banner{ //BIG CONTACT
+            margin-bottom: 2rem;
+            position: relative;
+
+            &::before{
+                content: "";
+                width: 15%;
+                height: 1px;
+                background: $light-grey;
+                position: absolute;
+                bottom: 0;
+                left: 0.1em;
+                display: none;
+
+                @include respond (desktop){
+                    display: block;
+                }
+            }
+
+            @include respond(desktop){ //1000px
+                margin-left: -20%;
+                font-size: 11.5vw;
+            }
+
+            @include respond(largedesktop){ //1440px
+                font-size: 10.35rem;
+            }
+        }
+
+        .contacthero-title{ //Your team of professionals
+            margin-bottom: 0.8em;
+        }
+    }
+}
