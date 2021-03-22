@@ -2,6 +2,7 @@ header{
     display: none;
     padding: $header-tablet-padding;
     position: relative;
+    // overflow-x: hidden;
 
     @include respond(tablet){
         display: block;
