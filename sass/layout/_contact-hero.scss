@@ -51,9 +51,10 @@
 
         @include respond(tablet){ //600px
             position: absolute;
-            top: 39%;
+            top: 46%;
             left: 20%;
             width: 355px;
+
         }
 
         @include respond(desktop){ //1000px
