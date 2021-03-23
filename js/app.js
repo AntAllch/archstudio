@@ -1,5 +1,7 @@
 // window.$ = require('jquery');
 
+//----------------------------- Start of Mobile Nav Menu -----------------------------//
+
 let hamburger = $(".hamburger").on("click", () => {
 
     console.log("Hamburger pressed");
@@ -35,3 +37,15 @@ let close = $(".close").on("click", () => {
     });
     
 })
+
+//------------------------------ End of Mobile Nav Menu ------------------------------//
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+//-------------------------- Start of Intersection Observer --------------------------//
+
+
+
+//--------------------------- End of Intersection Observer ---------------------------//
+
+
