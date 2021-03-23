@@ -36,13 +36,15 @@ nav{
             position: absolute;
             top: 40px;
             transform: scaleX(0%);
+            opacity: 0;
             transform-origin: right;
-            // transition: $transition-transform;
+            transition: $transition-transform, $transition-opacity;
         }
 
         &:hover::before{
+            opacity: 1;
             transform: scaleX(100%);
-            // transform-origin: left; 
+            transform-origin: left; 
         }
     }
 }
