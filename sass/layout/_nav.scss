@@ -37,12 +37,12 @@ nav{
             top: 40px;
             transform: scaleX(0%);
             transform-origin: right;
-            transition: $transition-transform;
+            // transition: $transition-transform;
         }
 
         &:hover::before{
             transform: scaleX(100%);
-            transform-origin: left; 
+            // transform-origin: left; 
         }
     }
 }
