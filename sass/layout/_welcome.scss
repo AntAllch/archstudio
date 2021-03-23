@@ -32,6 +32,9 @@
         right: 0;
         z-index: -10;
         display: none;
+        width: 350px;
+        height: 568px;
+        background-image: url("/img/home/desktop/image-welcome.jpg");
 
         @include respond(desktop){
             display: block;

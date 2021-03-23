@@ -337,7 +337,10 @@ nav {
     top: 0;
     right: 0;
     z-index: -10;
-    display: none; }
+    display: none;
+    width: 350px;
+    height: 568px;
+    background-image: url("/img/home/desktop/image-welcome.jpg"); }
     @media screen and (min-width: 1000px) {
       .welcome .welcome-img {
         display: block; } }
