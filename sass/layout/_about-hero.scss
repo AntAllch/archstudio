@@ -1,4 +1,6 @@
 .about-hero{
+
+    margin-top: $abouthero-mobile-margin;
     
     @include respond(desktop){ //1000px
         display: flex;

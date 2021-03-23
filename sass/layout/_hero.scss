@@ -5,11 +5,13 @@
     background-size: cover;
     color: $white;
     padding: $hero-mobile-padding;
+    margin-top: 6.8em;
     position: relative;
 
     @include respond(tablet){
         background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.45),), url("../img/home/tablet/image-hero-paramour.jpg");    
         padding: $hero-tablet-padding;
+        margin-top: 0;
     }
 
     @include respond(desktop){

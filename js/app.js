@@ -13,7 +13,7 @@ let hamburger = $(".hamburger").on("click", () => {
     mobNavLink.each(function(i){
         setTimeout(function(){
             mobNavLink.eq(i).addClass("fade-links");
-        }, 60 * (i+1));
+        }, 80 * (i+1));
     });
     
 })

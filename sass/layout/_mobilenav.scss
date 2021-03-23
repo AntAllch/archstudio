@@ -15,7 +15,12 @@
         justify-content: space-between;
         align-items: center;
         padding: 2em;
-        background-color: $white;
+        background-color: $verylight-grey;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100000;
 
         .hamburger{
             cursor: pointer;
@@ -32,12 +37,13 @@
 
         width: 80%;
         position: absolute;
+        top: 0;
         right: 0;
         background-color: $verylight-grey;
         padding: $mobile-nav-padding;
         font-weight: $fw-medium;
         opacity: 0;
-        transform: translateX(100%);
+        transform: translateY(-100%);
         transition: $transition-opacity, $transition-transform;
         z-index: 999;
 
@@ -75,7 +81,9 @@
 
     .open{
         opacity: 1;
-        transform: translateX(0%);
+        // transform: translateX(0%);
+        transform: translateY(40%);
+        
     }
 
 }

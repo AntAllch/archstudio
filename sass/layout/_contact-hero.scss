@@ -1,5 +1,7 @@
 .contact-hero{
-    
+
+    margin-top: $contacthero-mobile-margin;
+
     @include respond(desktop){ //1000px
         display: flex;
         align-items: flex-end;
