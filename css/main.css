@@ -332,7 +332,7 @@ nav {
         font-size: 9rem; } }
   .welcome .welcome-title {
     margin-bottom: 0.8em; }
-  .welcome .welcome-img {
+  .welcome .welcome-image {
     position: absolute;
     top: 0;
     right: 0;
@@ -340,9 +340,9 @@ nav {
     display: none;
     width: 350px;
     height: 568px;
-    background-image: url("/img/home/desktop/image-welcome.jpg"); }
+    background-image: url("../img/home/desktop/image-welcome.jpg"); }
     @media screen and (min-width: 1000px) {
-      .welcome .welcome-img {
+      .welcome .welcome-image {
         display: block; } }
 
 .about-promo {

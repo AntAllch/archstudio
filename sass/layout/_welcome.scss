@@ -26,7 +26,7 @@
         margin-bottom: 0.8em;
     }
 
-    .welcome-img{
+    .welcome-image{
         position: absolute;
         top: 0;
         right: 0;
@@ -34,7 +34,7 @@
         display: none;
         width: 350px;
         height: 568px;
-        background-image: url("/img/home/desktop/image-welcome.jpg");
+        background-image: url("../img/home/desktop/image-welcome.jpg");
 
         @include respond(desktop){
             display: block;
