@@ -3,7 +3,8 @@ nav{
     // justify-content: space-between;
     align-items: center;
     opacity: 0;
-    // background-color: teal;
+    pointer-events: none;
+    transition: opacity 500ms ease-in;
 
     .nav-list{ //ul
         display: flex;
@@ -49,3 +50,4 @@ nav{
         }
     }
 }
+

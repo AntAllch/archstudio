@@ -2,8 +2,6 @@
 
     .hero-content{
 
-        background-attachment: fixed;
-
         background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.45),), url("../img/home/mobile/image-hero-paramour.jpg");
         @include centertop-image();
 
@@ -22,6 +20,10 @@
             position: relative;
             transform: translateX(10px);
             opacity: 0;
+            transform: translateX(10px);
+            pointer-events: none;
+
+            transition: opacity 750ms ease-in, transform 750ms cubic-bezier(.28,.62,.31,.74);
         
             @include respond(tablet){    
                 padding: $hero-tablet-padding;
@@ -48,7 +50,14 @@
                 margin-bottom: 5em;
             }
         }
+
+        .fade-in{
+            opacity: 1;
+            pointer-events: all;
+            transform: translateX(0);
+        }
     }
 
     
 }
+

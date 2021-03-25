@@ -9,6 +9,7 @@
     color: $white;
     display: grid;
     place-items: center;
+    // display: none;
 
     .intro-textgroup{
 
@@ -53,4 +54,5 @@
     right: 0;
     height: 100vh;
     z-index: 999;
+    // display: none;
 }
