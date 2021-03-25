@@ -1,0 +1,56 @@
+.intro{
+    background-color: $verydark-blue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 10000;
+    color: $white;
+    display: grid;
+    place-items: center;
+
+    .intro-textgroup{
+
+        text-align: center;
+
+        .hide{
+            
+            background-color: $verydark-blue;
+            overflow: hidden;
+
+            span{ //Arch and STUDIO
+                display: inline-block;
+                transform: translateY(100%);
+            }
+
+            .intro-title{ //Arch
+                font-size: 6rem;
+                font-weight: 900;
+                // margin-left: 4px;
+                margin-bottom: -20px;
+                letter-spacing: -10px;
+            }
+        
+            .intro-subtitle{ //STUDIO
+                font-size: 3.4rem;
+                font-weight: $fw-medium;
+            }
+
+        }
+        
+
+    }
+
+    
+}
+
+.slider{
+    background-color: $dark-grey;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 999;
+}

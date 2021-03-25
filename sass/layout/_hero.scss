@@ -1,42 +1,51 @@
 .hero{
-    background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.45),), url("../img/home/mobile/image-hero-paramour.jpg");
-    background-color: black;
-    background-position: top;
-    background-size: cover;
-    color: $white;
-    padding: $hero-mobile-padding;
-    margin-top: 6.8em;
-    position: relative;
 
-    @include respond(tablet){
-        background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.45),), url("../img/home/tablet/image-hero-paramour.jpg");    
-        padding: $hero-tablet-padding;
-        margin-top: 0;
-    }
+    .hero-content{
 
-    @include respond(desktop){
-        background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.45),), url("../img/home/desktop/image-hero-paramour.jpg");    
-        padding: $hero-desktop-padding;
-    }
-
-    // .hero-content{
-    // }
-
-    h1{ //welcome to Arch Studio
-        font-weight: $fw-medium;
-        font-size: $fs-mobile-title;
-        margin-left: -3.5px;
+        background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.45),), url("../img/home/mobile/image-hero-paramour.jpg");
+        @include centertop-image();
 
         @include respond(tablet){
-            font-size: $fs-tablet-title;
+            background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.45),), url("../img/home/tablet/image-hero-paramour.jpg");
         }
-    }
 
-    .hero-desc{
-        font-size: $fs-desc;
-        line-height: $lineheight-p;
-        max-width: 430px;
-        margin-bottom: 5em;
+        @include respond(desktop){
+            background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.45),), url("../img/home/desktop/image-hero-paramour.jpg");
+        }
+
+        .hero-textcontent{
+            color: $white;
+            padding: $hero-mobile-padding;
+            margin-top: 6.8em;
+            position: relative;
+            transform: translateX(10px);
+            opacity: 0;
+        
+            @include respond(tablet){    
+                padding: $hero-tablet-padding;
+                margin-top: 0;
+            }
+        
+            @include respond(desktop){    
+                padding: $hero-desktop-padding;
+            }
+            h1{ //welcome to Arch Studio
+                font-weight: $fw-medium;
+                font-size: $fs-mobile-title;
+                margin-left: -3.5px;
+        
+                @include respond(tablet){
+                    font-size: $fs-tablet-title;
+                }
+            }
+        
+            .hero-desc{
+                font-size: $fs-desc;
+                line-height: $lineheight-p;
+                max-width: 430px;
+                margin-bottom: 5em;
+            }
+        }
     }
 
     

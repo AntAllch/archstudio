@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500;700;900&display=swap");
 *,
 *::before,
 *::after {
@@ -107,6 +107,46 @@ body {
     -webkit-filter: brightness(100);
     filter: brightness(100); }
 
+.intro {
+  background-color: #1B1D23;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  z-index: 10000;
+  color: #fff;
+  display: -ms-grid;
+  display: grid;
+  place-items: center; }
+  .intro .intro-textgroup {
+    text-align: center; }
+    .intro .intro-textgroup .hide {
+      background-color: #1B1D23;
+      overflow: hidden; }
+      .intro .intro-textgroup .hide span {
+        display: inline-block;
+        -webkit-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+        transform: translateY(100%); }
+      .intro .intro-textgroup .hide .intro-title {
+        font-size: 6rem;
+        font-weight: 900;
+        margin-bottom: -20px;
+        letter-spacing: -10px; }
+      .intro .intro-textgroup .hide .intro-subtitle {
+        font-size: 3.4rem;
+        font-weight: 500; }
+
+.slider {
+  background-color: #60636D;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  z-index: 999; }
+
 header {
   display: none;
   padding: 3em 0;
@@ -145,7 +185,8 @@ header {
     top: 70px;
     left: 20px;
     margin-left: 12.5em;
-    letter-spacing: 10px; }
+    letter-spacing: 10px;
+    opacity: 0; }
     @media screen and (min-width: 1000px) {
       header .page-tags {
         top: 130px; } }
@@ -167,7 +208,8 @@ nav {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  opacity: 0; }
   nav .nav-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -284,45 +326,53 @@ nav {
     -ms-transform: translateY(40%);
     transform: translateY(40%); }
 
-.hero {
+.hero .hero-content {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.45))), url("../img/home/mobile/image-hero-paramour.jpg");
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45)), url("../img/home/mobile/image-hero-paramour.jpg");
   background-image: -o-linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45)), url("../img/home/mobile/image-hero-paramour.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45)), url("../img/home/mobile/image-hero-paramour.jpg");
-  background-color: black;
-  background-position: top;
   background-size: cover;
-  color: #fff;
-  padding: 7em 2em;
-  margin-top: 6.8em;
-  position: relative; }
+  background-position: top; }
   @media screen and (min-width: 600px) {
-    .hero {
+    .hero .hero-content {
       background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.45))), url("../img/home/tablet/image-hero-paramour.jpg");
       background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45)), url("../img/home/tablet/image-hero-paramour.jpg");
       background-image: -o-linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45)), url("../img/home/tablet/image-hero-paramour.jpg");
-      background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45)), url("../img/home/tablet/image-hero-paramour.jpg");
-      padding: 7em 4rem;
-      margin-top: 0; } }
+      background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45)), url("../img/home/tablet/image-hero-paramour.jpg"); } }
   @media screen and (min-width: 1000px) {
-    .hero {
+    .hero .hero-content {
       background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.45))), url("../img/home/desktop/image-hero-paramour.jpg");
       background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45)), url("../img/home/desktop/image-hero-paramour.jpg");
       background-image: -o-linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45)), url("../img/home/desktop/image-hero-paramour.jpg");
-      background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45)), url("../img/home/desktop/image-hero-paramour.jpg");
-      padding: 10em 7rem; } }
-  .hero h1 {
-    font-weight: 500;
-    font-size: 2rem;
-    margin-left: -3.5px; }
+      background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45)), url("../img/home/desktop/image-hero-paramour.jpg"); } }
+  .hero .hero-content .hero-textcontent {
+    color: #fff;
+    padding: 7em 2em;
+    margin-top: 6.8em;
+    position: relative;
+    -webkit-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    transform: translateX(10px);
+    opacity: 0; }
     @media screen and (min-width: 600px) {
-      .hero h1 {
-        font-size: 3rem; } }
-  .hero .hero-desc {
-    font-size: 0.8rem;
-    line-height: 1.7;
-    max-width: 430px;
-    margin-bottom: 5em; }
+      .hero .hero-content .hero-textcontent {
+        padding: 7em 4rem;
+        margin-top: 0; } }
+    @media screen and (min-width: 1000px) {
+      .hero .hero-content .hero-textcontent {
+        padding: 10em 7rem; } }
+    .hero .hero-content .hero-textcontent h1 {
+      font-weight: 500;
+      font-size: 2rem;
+      margin-left: -3.5px; }
+      @media screen and (min-width: 600px) {
+        .hero .hero-content .hero-textcontent h1 {
+          font-size: 3rem; } }
+    .hero .hero-content .hero-textcontent .hero-desc {
+      font-size: 0.8rem;
+      line-height: 1.7;
+      max-width: 430px;
+      margin-bottom: 5em; }
 
 .welcome {
   margin: 7em 2em;
