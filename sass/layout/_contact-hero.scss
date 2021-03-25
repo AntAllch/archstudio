@@ -2,6 +2,10 @@
 
     margin-top: $contacthero-mobile-margin;
 
+    @include respond(tablet){ //600px
+        margin: $contacthero-tablet-margin;
+    }
+
     @include respond(desktop){ //1000px
         display: flex;
         align-items: flex-end;

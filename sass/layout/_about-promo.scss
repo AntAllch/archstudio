@@ -1,4 +1,7 @@
 .about-promo{
+
+    background-attachment: fixed;
+
     background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.45),), url("../img/home/mobile/image-small-team.jpg");
     @include center-image();
     padding: $aboutpromo-mobile-padding;
