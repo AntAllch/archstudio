@@ -46,7 +46,7 @@ let close = $(".close").on("click", () => {
 
 //Home Hero Variables
 const nav = document.querySelector("nav");
-const indexHero = document.querySelector("header");
+const indexHero = document.querySelector(".hero");
 const heroText = document.querySelector(".hero-textcontent");
 const pageTags = document.querySelector(".page-tags");
 
@@ -69,17 +69,12 @@ const indexHeroObserver = new IntersectionObserver(function(entries, indexHeroOb
     entries.forEach(entry => {
         if(entry.isIntersecting){
 
-            setTimeout(() => { //Wait 2 seconds before running this function
-                nav.classList.add("fade-in");
-                pageTags.classList.add("fade-in");
-            }, 1900)
-
-            setTimeout(() =>{
+            setTimeout(() =>{ //wait 2.1 seconds before running this function
                 heroText.classList.add("fade-in");
             }, 2100)
 
             indexHeroObserver.unobserve(entry.target)
-        } 
+        }
         console.log(entry.target);
     });
 }, indexHeroOptions);

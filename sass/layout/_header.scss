@@ -18,7 +18,6 @@ header{
         position: absolute;
         top: -14px;
         left: 35px;
-        display: none;
     
         @include respond(tablet){
             display: block;
@@ -39,8 +38,6 @@ header{
         left: 20px;
         margin-left: 12.5em;
         letter-spacing: 10px;
-        opacity: 0;
-        transition: opacity 500ms ease-in;
 
 
         @include respond(desktop){
@@ -55,12 +52,6 @@ header{
             position: absolute;
             top: 50%;
             left: -150px;
-            transform: translateY(-50%);
         }
-    }
-
-    .fade-in{
-        opacity: 1;
-        pointer-events: all;
     }
 }
