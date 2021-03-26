@@ -187,6 +187,19 @@ body {
   z-index: 999;
 }
 
+.home-header {
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: opacity 500ms ease-in;
+  -o-transition: opacity 500ms ease-in;
+  transition: opacity 500ms ease-in;
+}
+
+.fade-in {
+  opacity: 1;
+  pointer-events: all;
+}
+
 header {
   display: none;
   padding: 3em 0;

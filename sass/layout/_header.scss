@@ -1,3 +1,15 @@
+.home-header{
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 500ms ease-in;
+}
+
+.fade-in{
+    opacity: 1;
+    pointer-events: all;
+}
+
+
 header{
     display: none;
     padding: $header-tablet-padding;

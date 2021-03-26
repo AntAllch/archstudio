@@ -44,8 +44,10 @@ let close = $(".close").on("click", () => {
 
 //-------------------------- Start of Intersection Observer --------------------------//
 
+//Nav Variables
+const homeHeader = document.querySelector(".home-header");
+
 //Home Hero Variables
-const nav = document.querySelector("nav");
 const indexHero = document.querySelector(".hero");
 const heroText = document.querySelector(".hero-textcontent");
 const pageTags = document.querySelector(".page-tags");
@@ -55,24 +57,36 @@ const welcome = document.querySelector(".welcome");
 const welcomeText = document.querySelector(".welcome-textcontent");
 const welcomeImg = document.querySelector(".welcome-image");
 
+
 //Intersectional Observers Options
+const homeHeaderOptions = {};
 const indexHeroOptions = {};
-const welcomeOptions = {
-    threshold: 0.5
-};
+const welcomeOptions = {threshold: 0.5};
 
 
+//Home Nav Observer
+const homeHeaderObserver = new IntersectionObserver(function(entries, homeHeaderObserver) {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            setTimeout(() =>{ //wait 2.1 seconds before running this function
+                homeHeader.classList.add("fade-in");
+            }, 2100)
+            // homeHeaderObserver.unobserve(entry.target)
+        }
+        console.log(entry.target);
+    });
+}, homeHeaderOptions);
+
+homeHeaderObserver.observe(homeHeader);
 
 
 //Index Hero Observer
 const indexHeroObserver = new IntersectionObserver(function(entries, indexHeroObserver) {
     entries.forEach(entry => {
         if(entry.isIntersecting){
-
             setTimeout(() =>{ //wait 2.1 seconds before running this function
                 heroText.classList.add("fade-in");
             }, 2100)
-
             indexHeroObserver.unobserve(entry.target)
         }
         console.log(entry.target);
@@ -80,9 +94,6 @@ const indexHeroObserver = new IntersectionObserver(function(entries, indexHeroOb
 }, indexHeroOptions);
 
 indexHeroObserver.observe(indexHero);
-
-
-
 
 
 //Welcome Section Observer
@@ -95,7 +106,6 @@ const welcomeObserver = new IntersectionObserver(function(entries, welcomeObserv
             welcomeImg.classList.add("fade-in");
             welcomeObserver.unobserve(entry.target)
         } 
-        
         console.log(entry.target);
     });
 }, welcomeOptions);
