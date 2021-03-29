@@ -12,11 +12,18 @@
         margin: $abouthero-desktop-margin;
     }
 
+    .contacthero-img,
+    .contacthero-textgroup{
+        opacity: 0;
+        transition: $transition-move-opacity;
+    }
+
     .contacthero-img{
         background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55),), url("../img/contact/mobile/image-hero.jpg");
         @include center-image();
         height: 240px;
         position: relative;
+        transform: translateX(-30px);
 
         @include respond(tablet){ //600px
             background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55),), url("../img/contact/tablet/image-hero.jpg");
@@ -54,6 +61,7 @@
 
     .contacthero-textgroup{
         padding: $abouthero-mobile-padding;
+        transform: translateX(30px);
 
         @include respond(tablet){ //600px
             position: absolute;
@@ -102,5 +110,10 @@
         .contacthero-title{ //Your team of professionals
             margin-bottom: 0.8em;
         }
+    }
+
+    .fade-in{
+        opacity: 1;
+        transform: translateX(0);
     }
 }
