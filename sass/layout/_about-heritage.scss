@@ -24,11 +24,19 @@
 
         @include respond(tablet){
             left: 0;
+            display: none;
         }
+    }
+
+    .aboutheritage-textgroup,
+    .aboutheritage-img{
+        opacity: 0;
+        transition: $transition-move-opacity;
     }
 
     .aboutheritage-textgroup{ //Our Heritage and 3 paragraphs
         position: relative;
+        transform: translateX(-30px);
 
         &::before{ //little thin line
             content: "";
@@ -68,10 +76,16 @@
         @include center-image();
         width: 50%;
         display: none;
+        transform: translateX(30px);
 
         @include respond(desktop){
             display: block;
             height: 568px;
         }
+    }
+
+    .fade-in{
+        opacity: 1;
+        transform: translateX(0);
     }
 }

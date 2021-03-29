@@ -4,3 +4,6 @@ $transition-filter: filter 250ms ease-in-out;
 $transition-mobile-links: opacity 1000ms ease-in-out;
 $transition-opacity: opacity 250ms ease-in-out;
 $transition-transform: transform 400ms cubic-bezier(.14,.61,.39,.92);
+
+$transition-move-opacity: opacity 500ms ease-in, transform 600ms cubic-bezier(.28,.62,.31,.74);
+$transition-inter-opacity: opacity 500ms ease-in;

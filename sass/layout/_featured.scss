@@ -17,6 +17,10 @@
     }
 
     .featured-groups{
+        
+        // opacity: 0;
+        // pointer-events: none;
+        // transition: opacity 500ms ease-in;
 
         @include respond(desktop){ //1000px 
             display: grid;
@@ -33,7 +37,10 @@
             display: flex;
             align-items: flex-end;
             overflow: hidden;
-            transition: $transition-filter;
+            transition: $transition-filter, opacity 500ms ease-in, transform 500ms ease-in;
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(-10px);
             @include hover-desaturate();
 
             @include respond(desktop){ //1000px 
@@ -47,6 +54,12 @@
                     margin-bottom: 0.5rem;
                 }
             }
+        }
+
+        .fade-in{
+            opacity: 1;
+            pointer-events: all;
+            transform: translateY(0);
         }
 
         .featured-number{
@@ -96,7 +109,11 @@
                 background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.55),), url("../img/portfolio/desktop/image-prototype.jpg");    
             }
         }
-
     }
+
+    // .fade-in{
+    //     opacity: 1;
+    //     pointer-events: all;
+    // }
 
 }

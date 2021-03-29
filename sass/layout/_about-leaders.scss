@@ -18,7 +18,8 @@
 
     .leader-group{
 
-        // margin-bottom: 4em;
+        opacity: 0;
+        transition: $transition-inter-opacity;
 
         .leadergroup-text{
             
@@ -84,5 +85,9 @@
             background-image: url("../img/about/desktop/avatar-maria.jpg");
         }
 
+    }
+
+    .fade-in{
+        opacity: 1;
     }
 }
