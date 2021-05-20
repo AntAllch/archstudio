@@ -49,7 +49,7 @@ const indexHeroObserver = new IntersectionObserver(function(entries, indexHeroOb
         if(entry.isIntersecting){
             setTimeout(() =>{ //wait 2.1 seconds before running this function
                 heroText.classList.add("fade-in");
-            }, 2100)
+            }, 1500)
             indexHeroObserver.unobserve(entry.target)
         }
         console.log(entry.target);
