@@ -112,6 +112,54 @@
             }
         }
 
+        .portfolio-7{
+            background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.55),), url("../img/portfolio/tablet/image-edelweiss.jpg");
+    
+            @include respond(desktop){ //1000px
+                background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.55),), url("../img/portfolio/desktop/image-edelweiss.jpg");    
+            }
+        }
+
+        .portfolio-8{
+            background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.55),), url("../img/portfolio/tablet/image-hypers.jpg");
+    
+            @include respond(desktop){ //1000px
+                background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.55),), url("../img/portfolio/desktop/image-hypers.jpg");    
+            }
+        }
+
+        .portfolio-9{
+            background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.55),), url("../img/portfolio/tablet/image-netcry.jpg");
+    
+            @include respond(desktop){ //1000px
+                background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.55),), url("../img/portfolio/desktop/image-netcry.jpg");    
+            }
+        }
+
+        .portfolio-10{
+            background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.55),), url("../img/portfolio/tablet/image-paramour.jpg");
+    
+            @include respond(desktop){ //1000px
+                background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.55),), url("../img/portfolio/desktop/image-paramour.jpg");    
+            }
+        }
+
+        .portfolio-11{
+            background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.55),), url("../img/portfolio/tablet/image-sxiv.jpg");
+    
+            @include respond(desktop){ //1000px
+                background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.55),), url("../img/portfolio/desktop/image-sxiv.jpg");    
+            }
+        }
+
+        .portfolio-12{
+            background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.55),), url("../img/portfolio/tablet/image-trinity.jpg");
+    
+            @include respond(desktop){ //1000px
+                background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.55),), url("../img/portfolio/desktop/image-trinity.jpg");    
+            }
+        }
+
     }
 
 }
