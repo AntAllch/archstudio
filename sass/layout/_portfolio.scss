@@ -29,6 +29,7 @@
             pointer-events: none;
             transition: $transition-filter, opacity 500ms ease-in;
             @include hover-desaturate();
+            @include hover-move();
     
             @include respond(desktop){ //1000px
                 height: 400px;

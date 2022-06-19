@@ -42,6 +42,7 @@
             pointer-events: none;
             transform: translateY(-10px);
             @include hover-desaturate();
+            @include hover-move();
 
             @include respond(desktop){ //1000px 
                 height: 560px;

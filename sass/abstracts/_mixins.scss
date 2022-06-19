@@ -21,6 +21,13 @@
     }
 }
 
+@mixin hover-move(){
+    &:hover{
+        transform: translateY(-5px);
+        transition: $transition-transform;
+    }
+}
+
 @mixin center-image(){
     background: {
         size: cover;
