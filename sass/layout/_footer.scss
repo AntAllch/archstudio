@@ -45,7 +45,6 @@ footer{
     
         .footer-navlist{ //ul
             list-style: none;
-
     
             @include respond(tablet){
                 display: flex;
@@ -56,6 +55,7 @@ footer{
             @include respond(desktop){
                 margin-bottom: 0;
                 margin-left: -110px;
+
             }
     
             .footer-navitem{ //li
